@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
     html,
     body {
         font-family: 'Montserrat',sans-serif;
+        scroll-behavior: smooth;
     }
 
     a {

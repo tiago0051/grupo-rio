@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import NavBar from '../components/NavBar'
+import ApoiadoresSlider from '../components/ApoiadoresSlider'
+
 import { StyledIndex } from '../styles'
 
 const Home: NextPage = () => {
@@ -18,6 +20,7 @@ const Home: NextPage = () => {
         <NavBar/>
         <section>
           <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
+          <ApoiadoresSlider/>
         </section>
       </main>
     </StyledIndex>

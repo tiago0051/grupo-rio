@@ -4,8 +4,7 @@ export const NavBar = styled.div`
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    padding: 2.5rem;
-    border-bottom: 1px solid rgb(250, 250, 250, 0.3);
+    padding: 2rem 2.5rem;
     width: 100%;
     z-index: 99999;
 
