@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import {FiSmile, FiEye, FaLightbulb, FaUserTie, FaRocket, FaCheckCircle, FaCopyright, FaUsers} from 'react-icons/all'
+import {FaSmile, FaEye, FaLightbulb, FaUserTie, FaRocket, FaCheckCircle, FaCopyright, FaUsers} from 'react-icons/fa'
 
 import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
               <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
               
           }
-          
+
           <ApoiadoresSlider/>
         </section>
 
@@ -50,13 +50,13 @@ const Home: NextPage = () => {
 
           <ul>
             <li>
-              <FiSmile/>
+              <FaSmile/>
               <h3>Motivação</h3>
               <p>Somos impulsionados a realizar um trabalho eficiente e de resultados!</p>
             </li>
 
             <li>
-              <FiEye/>
+              <FaEye/>
               <h3>Visão</h3>
               <p>Acreditamos em investimentos de futuro, trabalhamos para abrir mentes!</p>
             </li>
