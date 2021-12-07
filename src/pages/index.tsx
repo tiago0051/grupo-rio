@@ -35,68 +35,141 @@ const Home: NextPage = () => {
       <main>
         <NavBar/>
         <section>
-          {
-            isMobile ?
-              <Image src="/first-session/background-mobile.jpg" alt="background" width="1082px" height="1921px" layout="responsive"/>:
-              <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
-              
-          }
+        {
+          isMobile ?
+            <Image src="/first-session/background-mobile.jpg" alt="background" width="1082px" height="1921px" layout="responsive"/>:
+            <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
+            
+        }
 
-          <ApoiadoresSlider/>
+        <ApoiadoresSlider/>
         </section>
 
         <section>
-          <h2>Nossos Diferenciais</h2>
+        <h2>Nossos Diferenciais</h2>
 
-          <ul>
-            <li>
-              <FaSmile/>
-              <h3>Motivação</h3>
-              <p>Somos impulsionados a realizar um trabalho eficiente e de resultados!</p>
-            </li>
+        <ul>
+          <li>
+            <FaSmile/>
+            <h3>Motivação</h3>
+            <p>Somos impulsionados a realizar um trabalho eficiente e de resultados!</p>
+          </li>
 
-            <li>
-              <FaEye/>
-              <h3>Visão</h3>
-              <p>Acreditamos em investimentos de futuro, trabalhamos para abrir mentes!</p>
-            </li>
+          <li>
+            <FaEye/>
+            <h3>Visão</h3>
+            <p>Acreditamos em investimentos de futuro, trabalhamos para abrir mentes!</p>
+          </li>
 
-            <li>
-              <FaLightbulb/>
-              <h3>Estratégia</h3>
-              <p>Nossa maneira de fazer é atrativa e diferenciada, idealizamos o nosso próprio caminho de forma única!</p>
-            </li>
+          <li>
+            <FaLightbulb/>
+            <h3>Estratégia</h3>
+            <p>Nossa maneira de fazer é atrativa e diferenciada, idealizamos o nosso próprio caminho de forma única!</p>
+          </li>
 
-            <li>
-              <FaUserTie/>
-              <h3>Liderança</h3>
-              <p>Acreditamos no mérito individual e na preparação pessoal de avanço de cada um!</p>
-            </li>
+          <li>
+            <FaUserTie/>
+            <h3>Liderança</h3>
+            <p>Acreditamos no mérito individual e na preparação pessoal de avanço de cada um!</p>
+          </li>
 
-            <li>
-              <FaRocket/>
-              <h3>Reconhecimento</h3>
-              <p>Detentores de três prêmios em nosso segmento, estamos engajados com a evolução de nosso trabalho e dos nossos colaboradores!</p>
-            </li>
+          <li>
+            <FaRocket/>
+            <h3>Reconhecimento</h3>
+            <p>Detentores de três prêmios em nosso segmento, estamos engajados com a evolução de nosso trabalho e dos nossos colaboradores!</p>
+          </li>
 
-            <li>
-              <FaCheckCircle/>
-              <h3>Sensatez</h3>
-              <p>Nossa história de sucesso é fundamentada nos princípios da idoneidade e no comprometimento com o nosso cliente!</p>
-            </li>
+          <li>
+            <FaCheckCircle/>
+            <h3>Sensatez</h3>
+            <p>Nossa história de sucesso é fundamentada nos princípios da idoneidade e no comprometimento com o nosso cliente!</p>
+          </li>
 
-            <li>
-              <FaCopyright/>
-              <h3>Marca</h3>
-              <p>Nossa marca é símbolo da alegria e criatividade que você encontra em nossa cidade-sede!</p>
-            </li>
+          <li>
+            <FaCopyright/>
+            <h3>Marca</h3>
+            <p>Nossa marca é símbolo da alegria e criatividade que você encontra em nossa cidade-sede!</p>
+          </li>
 
-            <li>
-              <FaUsers/>
-              <h3>Time</h3>
-              <p>Investimos na formação de um time competente e orgulhoso em pertencer a essa organização!</p>
-            </li>
-          </ul>
+          <li>
+            <FaUsers/>
+            <h3>Time</h3>
+            <p>Investimos na formação de um time competente e orgulhoso em pertencer a essa organização!</p>
+          </li>
+        </ul>
+        </section>
+      
+        <section>
+
+          <div>
+            <div id="maria-augusta">
+              <h3>Maria Augusta</h3>
+              <span>CEO | Grupo Rio</span>
+
+              <Image src="/maria-augusta.jpg" alt="Maria Augusta" width="200px" height="200px" layout="fixed"/>
+              <p>“Não estou aqui para ser mais um, vim para fazer a diferença..”</p>
+            </div>
+
+            <div id="thiago-costa">
+              <p>“Eu gosto do impossível porque lá a concorrência é menor.”</p>
+              <h3>Thiago Costa</h3>
+              <Image src="/thiago-costa.jpg" alt="Thiago Costa" width="200px" height="200px" layout="fixed"/>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Seja nosso Parceiro</h2>
+
+          <form>
+            <div>
+              <label htmlFor="Nome">Nome</label>
+              <input name="Nome" type="text"/>
+
+              <label htmlFor="Sobrenome">Sobrenome</label>
+              <input name="Sobrenome" type="text"/>
+
+              <label htmlFor="Telefone">Telefone</label>
+              <input name="Telefone" type="text"/>
+
+              <label htmlFor="Email">Email</label>
+              <input name="Email" type="email"/>
+
+              <button>Enviar</button>
+            </div>
+
+            <p>Preencha o formulário ao lado e em breve um de nossos comerciais entrará em contato.</p>
+          </form>
+        </section>
+      
+        <section>
+          <div>
+            <h2>Depoimentos de nossos corretores</h2>
+          </div>
+
+          <div>
+              <div>
+                <Image src="/joão-santos.jpg" alt="João Santos" width="277px" height="286px" layout="intrinsic"/>
+
+                <div>
+                  <p>
+                    Muito me orgulha fazer parte do quadro de parceiros do Grupo Rio, uma organização que participo como colaborador desde sua fundação. E, por isso, posso afirmar com absoluta segurança que seu estrondoso crescimento, que não para, é resultado do alto grau de comprometimento com o seu negócio, tratando seus parceiros com muita ética, utilizando ferramentas de alta tecnologia e produtividade, mantendo o seu quadro pessoal de funcionários sempre preparados e comprometidos com a Empresa. Por tudo isso é que hoje o Grupo Rio é considerado uma das maiores promotoras do País.
+                  </p>
+                  <h4>JOÃO SANTOS, COLABORADOR</h4>
+                </div>
+              </div>
+
+              <div>
+                <Image src="/silva-santos.jpg" alt="Silva Santos" width="341px" height="345px"/>
+
+                <div>
+                  <p>
+                  Eu, minha família e empresa, viemos através deste texto, agradecer a confiança, respeito, dedicação e a amizade por esses longos anos em que trabalhamos com esta parceria. Costumo dizer que o nosso bom relacionamento é o segredo do nosso sucesso e não me canso de agradecer, todos os dias em minhas orações, por ter a oportunidade de trabalhar com esse grupo. Tudo que conquistei materialmente, primeiramente, agradeço a Deus, e depois a vocês. Estamos juntos, sempre!
+                  </p>
+                  <h4>SILVIA SANTOS (GÊNESIS CRED), PARCEIRA</h4>
+                </div>
+              </div>
+            </div>
         </section>
       </main>
     </StyledIndex>

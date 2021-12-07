@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 500;
     }
 
+    input {
+        outline: 0;
+    }
+
 `
 
 export default GlobalStyle;
