@@ -18,6 +18,11 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    h2 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
 `
 
 export default GlobalStyle;

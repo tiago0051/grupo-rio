@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import {FiSmile, FiEye, FaLightbulb, FaUserTie, FaRocket, FaCheckCircle, FaCopyright, FaUsers} from 'react-icons/all'
 
 import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
@@ -40,10 +41,62 @@ const Home: NextPage = () => {
               <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
               
           }
+          
           <ApoiadoresSlider/>
         </section>
 
         <section>
+          <h2>Nossos Diferenciais</h2>
+
+          <ul>
+            <li>
+              <FiSmile/>
+              <h3>Motivação</h3>
+              <p>Somos impulsionados a realizar um trabalho eficiente e de resultados!</p>
+            </li>
+
+            <li>
+              <FiEye/>
+              <h3>Visão</h3>
+              <p>Acreditamos em investimentos de futuro, trabalhamos para abrir mentes!</p>
+            </li>
+
+            <li>
+              <FaLightbulb/>
+              <h3>Estratégia</h3>
+              <p>Nossa maneira de fazer é atrativa e diferenciada, idealizamos o nosso próprio caminho de forma única!</p>
+            </li>
+
+            <li>
+              <FaUserTie/>
+              <h3>Liderança</h3>
+              <p>Acreditamos no mérito individual e na preparação pessoal de avanço de cada um!</p>
+            </li>
+
+            <li>
+              <FaRocket/>
+              <h3>Reconhecimento</h3>
+              <p>Detentores de três prêmios em nosso segmento, estamos engajados com a evolução de nosso trabalho e dos nossos colaboradores!</p>
+            </li>
+
+            <li>
+              <FaCheckCircle/>
+              <h3>Sensatez</h3>
+              <p>Nossa história de sucesso é fundamentada nos princípios da idoneidade e no comprometimento com o nosso cliente!</p>
+            </li>
+
+            <li>
+              <FaCopyright/>
+              <h3>Marca</h3>
+              <p>Nossa marca é símbolo da alegria e criatividade que você encontra em nossa cidade-sede!</p>
+            </li>
+
+            <li>
+              <FaUsers/>
+              <h3>Time</h3>
+              <p>Investimos na formação de um time competente e orgulhoso em pertencer a essa organização!</p>
+            </li>
+          </ul>
         </section>
       </main>
     </StyledIndex>
