@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const StyledSlider = styled.div`
     display: flex;
+    flex-direction: column;
     height: 10rem;
-    width: 80%;
+    max-width: 950px;
     align-self: center;
-    margin: 5rem 0;
+    margin: 3rem 0;
     padding: 0 10px;
 
     > div {
@@ -16,16 +17,12 @@ export const StyledSlider = styled.div`
         align-items: center;
     }
 
-    >div > button {
-        background: 0;
-        border: 0;
-    }
-
-    > div > button > svg {
+    > div > svg {
         cursor: pointer;
         font-size: 2.5rem;
         z-index: 2;
         flex-shrink: 0;
+        color: rgba(100, 100, 100);
     }
 
     div > div {
@@ -40,4 +37,26 @@ export const StyledSlider = styled.div`
         z-index: -1;
         width: 300px;
     }
+
+    #contador {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contador > div {
+        margin: 0 1rem;
+    }
+`
+
+interface CirculoContadorProps {
+    preencher: boolean;
+}
+
+export const CirculoContador = styled.span<CirculoContadorProps>`
+    flex-shrink: 0;
+    max-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 7px;
+    background-color: ${props => props.preencher ? 'rgba(80, 80, 80);' : 'rgba(150, 150, 150)'};
 `

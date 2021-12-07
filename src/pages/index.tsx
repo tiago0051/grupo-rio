@@ -6,8 +6,23 @@ import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
 
 import { StyledIndex } from '../styles'
+import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(
+        navigator.userAgent
+      )
+    ) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, [])
+
   return (
     <StyledIndex>
       <Head>
@@ -19,8 +34,16 @@ const Home: NextPage = () => {
       <main>
         <NavBar/>
         <section>
-          <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
+          {
+            isMobile ?
+              <Image src="/first-session/background-mobile.png" alt="background" width="1082px" height="1921px" layout="responsive"/>:
+              <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
+              
+          }
           <ApoiadoresSlider/>
+        </section>
+
+        <section>
         </section>
       </main>
     </StyledIndex>

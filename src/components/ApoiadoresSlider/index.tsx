@@ -1,23 +1,49 @@
+import React from 'react';
 import { NextPage } from "next"
 import Image from "next/image"
+import { useEffect } from "react"
 import {FiChevronLeft, FiChevronRight} from "react-icons/fi"
 
-import { StyledSlider } from "./style"
+import { StyledSlider, CirculoContador } from "./style"
 
 const Slider: NextPage = () =>{
+    const [slider, setSlider] = React.useState(0)
+
+    useEffect(() => {
+        setInterval(() => {
+            if(!checkMaxScroll()){
+                onClickRight()
+            }
+        }, 7000)
+    }, [])
 
     function onClickLeft(){
-        document.getElementById("items")!.scrollLeft -= document.getElementById("item")!.offsetWidth
+        if(!checkMaxScroll()){
+            document.getElementById("items")!.scrollLeft -= document.getElementById("item")!.offsetWidth
+            setSlider(slide => slide - 1)
+        }
     }
 
     function onClickRight(){
-        document.getElementById("items")!.scrollLeft += document.getElementById("item")!.offsetWidth
+        if(!checkMaxScroll()){
+            document.getElementById("items")!.scrollLeft += document.getElementById("item")!.offsetWidth
+            setSlider(slide => slide + 1)
+        }
+    }
+
+    function checkMaxScroll(){
+        if(document.getElementById("items")!.scrollLeft >= (document.getElementById("items")!.scrollWidth - document.getElementById("items")!.clientWidth)){
+            document.getElementById("items")!.scrollLeft = 0
+            setSlider(0)
+            return true;
+        }else{
+            return false;
+        }
     }
 
     return(
         <StyledSlider>
             <div>
-                <button onClick={onClickLeft}><FiChevronLeft/> </button>
                 <div id="items">
                     <Image id="item" src="/first-session/itau.png" alt="Itaú" width="300px" height="300px"/>
                     <Image src="/first-session/bradesco.png" alt="Bradesco" width="300px" height="300px"/>
@@ -28,7 +54,18 @@ const Slider: NextPage = () =>{
                     <Image src="/first-session/pan.png" alt="Pan" width="300px" height="300px"/>
                     <Image src="/first-session/bmg.png" alt="BMG" width="300px" height="300px"/>
                 </div>
-                <button onClick={onClickRight}><FiChevronRight/></button>
+            </div>
+            <div id="contador">
+                <FiChevronLeft onClick={onClickLeft}/>
+                <div>
+                    <CirculoContador preencher={slider == 0}/>
+                    <CirculoContador preencher={slider == 1}/>
+                    <CirculoContador preencher={slider == 2}/>
+                    <CirculoContador preencher={slider == 3}/>
+                    <CirculoContador preencher={slider == 4}/>
+                    <CirculoContador preencher={slider == 5}/>
+                </div>
+                <FiChevronRight onClick={onClickRight}/>
             </div>
         </StyledSlider>
     )
