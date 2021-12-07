@@ -46,6 +46,14 @@ export const StyledSlider = styled.div`
     #contador > div {
         margin: 0 1rem;
     }
+
+    @media only screen and (max-width: 600px) {
+        width: 300px;
+
+        #contador svg {
+            display: none;
+        }
+    }
 `
 
 interface CirculoContadorProps {

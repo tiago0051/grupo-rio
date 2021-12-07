@@ -20,14 +20,14 @@ const Slider: NextPage = () =>{
     function onClickLeft(){
         if(!checkMaxScroll()){
             document.getElementById("items")!.scrollLeft -= document.getElementById("item")!.offsetWidth
-            setSlider(slide => slide - 1)
+            setSlider(slide => (slide - 1) >= 0 ? slide - 1 : 0)
         }
     }
 
     function onClickRight(){
         if(!checkMaxScroll()){
             document.getElementById("items")!.scrollLeft += document.getElementById("item")!.offsetWidth
-            setSlider(slide => slide + 1)
+            setSlider(slide => (slide + 1) < 5 ? slide + 1 : 5)
         }
     }
 

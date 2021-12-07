@@ -36,7 +36,7 @@ const Home: NextPage = () => {
         <section>
           {
             isMobile ?
-              <Image src="/first-session/background-mobile.png" alt="background" width="1082px" height="1921px" layout="responsive"/>:
+              <Image src="/first-session/background-mobile.jpg" alt="background" width="1082px" height="1921px" layout="responsive"/>:
               <Image src="/first-session/background.png" alt="background" width="1536px" height="864px" layout="responsive"/>
               
           }
