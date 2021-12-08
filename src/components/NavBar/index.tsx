@@ -8,9 +8,9 @@ const Index: NextPage = () =>{
         <NavBar>
             <ul id="desktop">
                 <li><a>Início</a></li>
-                <li><a>Parcerias</a></li>
-                <li><a>Contato</a></li>
-                <li><a>Quem somos</a></li>
+                <li><a href="#parcerias">Parcerias</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#quem-somos">Quem somos</a></li>
                 <li><a>Campanhas</a></li>
             </ul>
             <div id="mobile">

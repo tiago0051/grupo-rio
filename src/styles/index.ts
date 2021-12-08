@@ -144,7 +144,8 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             flex-direction: column;
             align-items: center;
 
-            p:first-child{
+            p{
+                margin-top: 1rem;
                 font-size: 1.9rem;
                 text-align: center;
             }
@@ -152,6 +153,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             h3 {
                 font-size: 2rem;
                 margin: 1.5rem;
+                align-self: flex-start;
             }
         }
 

@@ -94,7 +94,7 @@ const Home: NextPage = () => {
         </ul>
         </section>
       
-        <section>
+        <section id="quem-somos">
           <article>
           </article>
 
@@ -108,14 +108,14 @@ const Home: NextPage = () => {
             </div>
 
             <div id="thiago-costa">
-              <p>“Eu gosto do impossível porque lá a concorrência é menor.”</p>
               <h3>Thiago Costa</h3>
               <Image src="/thiago-costa.jpg" alt="Thiago Costa" width="200px" height="200px" layout="fixed"/>
+              <p>“Eu gosto do impossível porque lá a concorrência é menor.”</p>
             </div>
           </div>
         </section>
 
-        <section>
+        <section id="contato">
           <form>
             <div>
               <label htmlFor="Nome">Nome</label>

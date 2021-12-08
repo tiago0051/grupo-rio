@@ -42,7 +42,7 @@ const Slider: NextPage = () =>{
     }
 
     return(
-        <StyledSlider>
+        <StyledSlider id="parcerias">
             <div>
                 <div id="items">
                     <Image id="item" src="/first-session/itau.png" alt="Itaú" width="300px" height="300px"/>
