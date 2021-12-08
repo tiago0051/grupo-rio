@@ -37,4 +37,14 @@ export const FooterStyle = styled.footer`
         font-size: 1.7rem;
         text-align: left;
     }
+
+    @media only screen and (max-width: 600px) {
+        .linha {
+            flex-direction: column;
+        }
+
+        #redes-sociais {
+            margin-bottom: 4rem;
+        }
+    }
 `

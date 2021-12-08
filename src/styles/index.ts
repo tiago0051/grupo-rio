@@ -75,19 +75,26 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             color: rgb(150, 150, 150);
             line-height: 2rem;
         }
+
+        @media only screen and (max-width: 600px) {
+            li {
+                width: 100%;
+            }
+            
+        }
     }
 
     main section:nth-child(4){
-        padding: 2rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: rgb(20, 20, 60);
+        margin-bottom: 3rem;
 
         article {
             width: 100%;
             height: 100vh;
-            background-image: url(${props => props.isMobile ? './quem_somos_mobile.png' : './quem_somos_desktop.png'});
+            background-image: url(${props => props.isMobile ? './quem_somos_mobile.jpg' : './quem_somos_desktop.jpg'});
             background-size: cover;
             background-position: center;
             margin-bottom: 3rem;
@@ -146,6 +153,37 @@ export const StyledIndex = styled.div<StyledIndexProps>`
                 margin: 1.5rem;
             }
         }
+
+        @media only screen and (max-width: 600px) {
+            > div {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #maria-augusta{
+                width: 90%;
+                text-align: center;
+                margin-bottom: 4rem;
+
+                span {
+                    align-self: center;
+                }
+            }
+
+            #thiago-costa {
+                width: 90%;
+
+                span {
+                    order: 1;
+                }
+
+                p:first-child {
+                    order: 2;
+                    margin-top: 1rem;
+                }
+            }
+        }
     }
 
     main section:nth-child(5) {
@@ -199,6 +237,43 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         p {
             font-size: 4rem;
             width: 50%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            margin-top: 3rem;
+
+            h2 {
+                font-size: 4rem;
+            }
+
+            div {
+                order: 2;
+                width: 100%;
+            }
+
+            p{
+                order: 1;
+                font-size: 2.4rem;
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+
+            form {
+                width: 100%;
+                padding: 1rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                order: 2;
+            }
+
+            input {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
         }
     }
 
@@ -256,6 +331,31 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         h4 {
             margin-top: 1rem;
             color: rgb(80, 80, 80);
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            h2 {
+                padding: 1rem;
+                font-size: 2.7rem;
+            }
+
+            > div {
+                flex-direction: column;
+            }
+
+            > div > div {
+                flex-direction: column;
+            }
+
+            .Image {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            > div > div > div:last-child {
+                width: 100%;
+            }
         }
     }
 `
