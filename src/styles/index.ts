@@ -1,10 +1,27 @@
 import styled from 'styled-components';
 
-export const StyledIndex = styled.div`
+interface StyledIndexProps {
+    isMobile: boolean;
+}
+
+export const StyledIndex = styled.div<StyledIndexProps>`
     main > section{
         z-index: -1;
         display: flex;
         flex-direction: column;
+    }
+
+    main section:nth-child(2){
+
+        > div:first-child {
+            background-image: url(${props => props.isMobile ? './first-session/background-mobile.jpg' : './first-session/background.png'});
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     main section:nth-child(3) {
@@ -61,11 +78,20 @@ export const StyledIndex = styled.div`
     }
 
     main section:nth-child(4){
-        padding: 2rem;
+        padding: 2rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: rgb(20, 20, 60);
+
+        article {
+            width: 100%;
+            height: 100vh;
+            background-image: url(${props => props.isMobile ? './quem_somos_mobile.png' : './quem_somos_desktop.png'});
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 3rem;
+        }
 
         > div {
             display: flex;

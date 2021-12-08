@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const StyledSlider = styled.div`
     display: flex;
     flex-direction: column;
-    height: 10rem;
+    height: 12rem;
     max-width: 950px;
     align-self: center;
-    margin: 3rem 0;
+    margin: 0 0;
     padding: 0 10px;
 
     > div {
