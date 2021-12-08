@@ -116,8 +116,6 @@ const Home: NextPage = () => {
         </section>
 
         <section>
-          <h2>Seja nosso Parceiro</h2>
-
           <form>
             <div>
               <label htmlFor="Nome">Nome</label>
@@ -135,7 +133,7 @@ const Home: NextPage = () => {
               <button>Enviar</button>
             </div>
 
-            <p>Preencha o formulário ao lado e em breve um de nossos comerciais entrará em contato.</p>
+            <h2>Seja nosso Parceiro</h2>
           </form>
         </section>
       

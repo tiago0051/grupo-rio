@@ -79,6 +79,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         @media only screen and (max-width: 600px) {
             li {
                 width: 100%;
+                border: 0;
             }
             
         }
