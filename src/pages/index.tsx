@@ -149,7 +149,9 @@ const Home: NextPage = () => {
 
           <div>
               <div>
-                <Image src="/joão-santos.jpg" alt="João Santos" width="277px" height="286px" layout="intrinsic"/>
+                <div className="Image">
+                  <Image src="/joão-santos.jpg" alt="João Santos" width="86px" height="86px" layout="fixed"/>
+                </div>
 
                 <div>
                   <p>
@@ -160,7 +162,9 @@ const Home: NextPage = () => {
               </div>
 
               <div>
-                <Image src="/silva-santos.jpg" alt="Silva Santos" width="341px" height="345px"/>
+                <div className="Image">
+                  <Image src="/silva-santos.jpg" alt="Silva Santos" width="86px" height="86px" layout="fixed"/>
+                </div>
 
                 <div>
                   <p>
@@ -171,6 +175,8 @@ const Home: NextPage = () => {
               </div>
             </div>
         </section>
+
+
       </main>
     </StyledIndex>
   )

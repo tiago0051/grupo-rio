@@ -178,31 +178,58 @@ export const StyledIndex = styled.div`
 
     main section:nth-child(6){
         width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #f9fafb;
 
         > div {
             display: flex;
             flex-direction: row;
             width: 100%;
+            max-width: 1080px;
+            margin-bottom: 4rem;
+        }
+
+        > div > div:hover {
+            box-shadow: 0 3px 10px 2px rgb(0, 0, 0, 0.3);
         }
 
         > div > div {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             width: 100%;
+            border: 1px solid rgb(220, 220, 220, 0.8);
+            background-color: white;
+            padding: 2rem;
+            transition: box-shadow 0.2s linear;
         }
 
-        span {
+        .Image {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Image span {
             border-radius: 50%;
-            flex-shrink: 0;
-            height: 10%;
         }
 
-        > div > div > div {
-            width: 90%;
+        > div > div > div:last-child {
+            width: 80%;
         }
+
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            line-height: 1.9rem;
+            font-weight: 700;
+            padding: 0.7rem;
+        }
+
+        h4 {
+            margin-top: 1rem;
+            color: rgb(80, 80, 80);
         }
     }
 `
