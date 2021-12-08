@@ -11,7 +11,7 @@ const Index: NextPage = () =>{
                 <li><a>Parcerias</a></li>
                 <li><a>Contato</a></li>
                 <li><a>Quem somos</a></li>
-                <li><a>Política de Privacidade</a></li>
+                <li><a>Campanhas</a></li>
             </ul>
             <div id="mobile">
                 <FiMenu onClick={() => document.getElementById("list")!.style.display = "flex"}/>

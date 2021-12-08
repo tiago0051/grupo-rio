@@ -8,6 +8,7 @@ import ApoiadoresSlider from '../components/ApoiadoresSlider'
 
 import { StyledIndex } from '../styles'
 import { useEffect, useState } from 'react'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -176,7 +177,7 @@ const Home: NextPage = () => {
             </div>
         </section>
 
-
+        <Footer/>
       </main>
     </StyledIndex>
   )

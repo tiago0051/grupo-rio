@@ -199,7 +199,7 @@ export const StyledIndex = styled.div`
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
-            border: 1px solid rgb(220, 220, 220, 0.8);
+            border: 2px solid rgb(220, 220, 220, 0.8);
             background-color: white;
             padding: 2rem;
             transition: box-shadow 0.2s linear;
