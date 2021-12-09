@@ -11,7 +11,6 @@ export default function Footer(){
                     <Image src="/logo.png" alt="Logo Grupo Rio" width="300px" height="86px" />
                     <div id="redes-sociais">
                         <a href="https://www.facebook.com/Grupo-Rio-Promotora-106628005150431" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><FaTwitter/></a>
                         <a href="https://www.instagram.com/gruporiopromotora/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
                         <a href="#" target="_blank" rel="noopener noreferrer"><FaRegEnvelope/></a>
                     </div>

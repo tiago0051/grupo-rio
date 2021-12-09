@@ -32,12 +32,13 @@ const Slider: NextPage = () =>{
     }
 
     function checkMaxScroll(){
-        if(document.getElementById("items")!.scrollLeft >= (document.getElementById("items")!.scrollWidth - document.getElementById("items")!.clientWidth)){
+        if(document.getElementById("items")!.scrollLeft >= (document.getElementById("items")!.scrollWidth - document.getElementById("items")!.clientWidth - 20)){
             document.getElementById("items")!.scrollLeft = 0
             setSlider(0)
             return true;
         }else{
             return false;
+            
         }
     }
 
