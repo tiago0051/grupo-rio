@@ -14,13 +14,13 @@ export const StyledIndex = styled.div<StyledIndexProps>`
     main section:nth-child(2){
 
         > div:first-child {
-            background-image: url(${props => props.isMobile ? './first-session/background-mobile.jpg' : './first-session/background.png'});
+            background-image: url(${props => props.isMobile ? './first-session/background-mobile.png' : './first-session/background.png'});
             width: 100%;
-            height: 100vh;
+            height: ${props => props.isMobile ? '60vh' : '100vh'};
             margin: 0;
             padding: 0;
             background-size: cover;
-            background-position: center;
+            background-position: top;
         }
     }
 
@@ -294,6 +294,10 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         align-items: center;
         background-color: #f9fafb;
 
+        h2 {
+            text-align: center;
+        }
+
         > div {
             display: flex;
             flex-direction: row;
@@ -390,5 +394,9 @@ export const ButtonAreaDoCliente = styled.button`
 
     :hover {
         box-shadow: 0 3px 10px 2px rgb(0, 0, 0, 0.3);
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 100px;
     }
 `
