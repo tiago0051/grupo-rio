@@ -70,6 +70,15 @@ export default function Index(){
 
                         <div/>
                     </Artigo>
+
+                    <Artigo img="/campanhas/copa-do-mundo-2010/index.jpg">
+                        <div>
+                            <h3>Copa do Mundo BMG</h3>
+                            <p>2010</p>
+                        </div>
+
+                        <div/>
+                    </Artigo>
                 </div>
 
             </section>
