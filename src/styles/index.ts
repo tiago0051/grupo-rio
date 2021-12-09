@@ -370,3 +370,25 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
     }
 `
+
+export const ButtonAreaDoCliente = styled.button`
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: 0;
+    padding: 5px 10px;
+    
+    font-size: 1.2rem;
+
+    z-index: 9999999999999;
+    cursor: pointer;
+
+    transition: all 0.2s linear;
+
+    :hover {
+        box-shadow: 0 3px 10px 2px rgb(0, 0, 0, 0.3);
+    }
+`

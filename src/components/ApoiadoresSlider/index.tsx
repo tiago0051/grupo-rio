@@ -18,14 +18,14 @@ const Slider: NextPage = () =>{
     }, [])
 
     function onClickLeft(){
-        if(!checkMaxScroll()){
+        if(!checkMaxScroll() && document.getElementById("items")){
             document.getElementById("items")!.scrollLeft -= document.getElementById("item")!.offsetWidth
             setSlider(slide => (slide - 1) >= 0 ? slide - 1 : 0)
         }
     }
 
     function onClickRight(){
-        if(!checkMaxScroll()){
+        if(!checkMaxScroll() && document.getElementById("items")){
             document.getElementById("items")!.scrollLeft += document.getElementById("item")!.offsetWidth
             setSlider(slide => (slide + 1) < 5 ? slide + 1 : 5)
         }
@@ -37,9 +37,9 @@ const Slider: NextPage = () =>{
                 document.getElementById("items")!.scrollLeft = 0
                 setSlider(0)
                 return true;
-            }else{
-                return false;
             }
+        }else{
+            return false;
         }
     }
 

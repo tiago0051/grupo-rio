@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import router from 'next/router'
 import {FaSmile, FaEye, FaLightbulb, FaUserTie, FaRocket, FaCheckCircle, FaCopyright, FaUsers} from 'react-icons/fa'
 
 import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
 
-import { StyledIndex } from '../styles'
+import { StyledIndex, ButtonAreaDoCliente } from '../styles'
 import { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 
@@ -36,8 +37,10 @@ const Home: NextPage = () => {
 
       <main>
         <NavBar/>
+
         <section>
           <div></div>
+          <ButtonAreaDoCliente onClick={() => router.push("https://app1.gerencialcredito.com.br/gruporio/default.asp")}>Área do Cliente</ButtonAreaDoCliente>
           <ApoiadoresSlider/>
         </section>
 

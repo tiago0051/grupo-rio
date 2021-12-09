@@ -9,9 +9,9 @@ const Index: NextPage = () =>{
         <NavBar>
             <ul id="desktop">
                 <li><Link href="/">Início</Link></li>
-                <li><Link href="#parcerias">Parcerias</Link></li>
-                <li><Link href="#contato">Contato</Link></li>
-                <li><Link href="#quem-somos">Quem somos</Link></li>
+                <li><Link href="/#parcerias">Parcerias</Link></li>
+                <li><Link href="/#contato">Contato</Link></li>
+                <li><Link href="/#quem-somos">Quem somos</Link></li>
                 <li><Link href="/campanhas">Campanhas</Link></li>
             </ul>
             <div id="mobile">
