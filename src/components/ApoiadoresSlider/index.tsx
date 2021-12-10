@@ -6,16 +6,26 @@ import {FiChevronLeft, FiChevronRight} from "react-icons/fi"
 
 import { StyledSlider, CirculoContador } from "./style"
 
-const Slider: NextPage = () =>{
+interface Props {
+    isMobile: boolean
+}
+
+const Slider: NextPage<Props> = ({isMobile}) =>{
     const [slider, setSlider] = React.useState(0)
+    const [execute, setExecute] = React.useState(false)
 
     useEffect(() => {
         setInterval(() => {
-            if(!checkMaxScroll()){
-                onClickRight()
-            }
-        }, 7000)
+            setExecute(execute => !execute)
+        }, 3000)
     }, [])
+
+    useEffect(() => {
+        if(!checkMaxScroll() && execute){
+            onClickRight()
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[execute])
 
     function onClickLeft(){
         if(!checkMaxScroll() && document.getElementById("items")){
@@ -27,7 +37,8 @@ const Slider: NextPage = () =>{
     function onClickRight(){
         if(!checkMaxScroll() && document.getElementById("items")){
             document.getElementById("items")!.scrollLeft += document.getElementById("item")!.offsetWidth
-            setSlider(slide => (slide + 1) < 5 ? slide + 1 : 5)
+
+            isMobile ? setSlider(slide => (slide + 1) < 7 ? slide + 1 : 7) : setSlider(slide => (slide + 1) < 5 ? slide + 1 : 5)
         }
     }
 
@@ -66,6 +77,20 @@ const Slider: NextPage = () =>{
                     <CirculoContador preencher={slider == 3}/>
                     <CirculoContador preencher={slider == 4}/>
                     <CirculoContador preencher={slider == 5}/>
+
+                    {
+                        isMobile ? 
+                            (
+                                <>
+                                    <CirculoContador preencher={slider == 6}/>
+                                    <CirculoContador preencher={slider == 7}/>
+                                </>
+                            ) :
+                            (
+                                <>
+                                </>
+                            )
+                    }
                 </div>
                 <FiChevronRight onClick={onClickRight}/>
             </div>
