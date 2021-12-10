@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 import {StyledCampanhas, Artigo} from '../../styles/campanhas'
 
@@ -81,6 +82,8 @@ export default function Index(){
                 </div>
 
             </section>
+
+            <Footer/>
         </StyledCampanhas>
     )
 }

@@ -24,7 +24,7 @@ export default function Footer(){
 
             <div className="linha">
                 <div className="coluna">© 2021 Grupo Rio</div>
-                <div className="coluna">Desenvolvido por Grupo Rio</div>
+                <div className="coluna">Desenvolvido por Conecte-se</div>
             </div>
         </FooterStyle>
     )

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const FooterStyle = styled.footer`
     background-color: white;
     border-top: 5rem #2925f4 solid;
-    margin-top: -9rem;
     padding: 0;
     display: flex;
     flex-direction: column;

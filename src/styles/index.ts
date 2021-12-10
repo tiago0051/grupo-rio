@@ -15,6 +15,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
 
         > div:first-child {
             background-image: url(${props => props.isMobile ? './first-session/background-mobile.png' : './first-session/background.png'});
+            background-attachment: fixed;
             width: 100%;
             height: ${props => props.isMobile ? '60vh' : '100vh'};
             margin: 0;
@@ -184,6 +185,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
 
             #thiago-costa {
                 width: 90%;
+                text-align: center;
 
                 span {
                     order: 1;
@@ -192,6 +194,10 @@ export const StyledIndex = styled.div<StyledIndexProps>`
                 p:first-child {
                     order: 2;
                     margin-top: 1rem;
+                }
+
+                h3 {
+                    align-self: center;
                 }
             }
         }
@@ -205,10 +211,11 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             margin-bottom: 2rem;
             font-size: 5rem;
             font-weight: 700;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
         }
 
         form {
-            background-image: url("./background-form.png");
+            background-image: url("./contato.jpg");
             background-position: top;
             background-size: cover;
             background-attachment: fixed;
@@ -254,7 +261,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             margin-top: 3rem;
 
             h2 {
-                font-size: 4rem;
+                font-size: 3.5rem;
             }
 
             div {
