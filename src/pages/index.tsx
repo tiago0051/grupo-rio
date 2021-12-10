@@ -108,7 +108,7 @@ const Home: NextPage = () => {
               <span>CEO | Grupo Rio</span>
 
               <Image src="/maria-augusta.jpg" alt="Maria Augusta" width="200px" height="200px" layout="fixed"/>
-              <p>“Nunca foi sorte sempre foi Deus.”</p>
+              <p>“Nunca foi sorte, sempre foi Deus.”</p>
             </div>
 
             <div id="thiago-costa">
