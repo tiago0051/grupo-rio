@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 
         <section>
           <div></div>
-          <ButtonAreaDoCliente onClick={() => router.push("https://app1.gerencialcredito.com.br/gruporio/default.asp")}>Área do Cliente</ButtonAreaDoCliente>
+          <ButtonAreaDoCliente onClick={() => router.push("https://app1.gerencialcredito.com.br/gruporio/default.asp")}>Área do Parceiro</ButtonAreaDoCliente>
           <ApoiadoresSlider isMobile={isMobile}/>
         </section>
 
