@@ -37,6 +37,16 @@ export const FooterStyle = styled.footer`
         text-align: left;
     }
 
+    a {
+        border-bottom: 1px solid rgb(200, 200, 200);
+        font-style: italic;
+        transition: border 0.1s linear;
+    }
+
+    a:hover {
+        border-bottom: 1px solid #2925f4;
+    }
+
     @media only screen and (max-width: 600px) {
         .linha {
             flex-direction: column;

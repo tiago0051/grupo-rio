@@ -211,12 +211,12 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             margin-bottom: 2rem;
             font-size: 5rem;
             font-weight: 700;
-            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+            text-shadow: 0 0 10px rgba(0,0,0,0.4);
         }
 
         form {
-            background-image: url("./contato.jpg");
-            background-position: top;
+            background-image: url("./contato2.jpg");
+            background-position: bottom;
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;

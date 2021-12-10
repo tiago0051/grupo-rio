@@ -24,7 +24,7 @@ export default function Footer(){
 
             <div className="linha">
                 <div className="coluna">© 2021 Grupo Rio</div>
-                <div className="coluna">Desenvolvido por Conecte-se</div>
+                <div className="coluna">Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5555219706468&text&app_absent=0">Conecte-se</a></div>
             </div>
         </FooterStyle>
     )
