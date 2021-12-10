@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import router from 'next/router'
 import {FaSmile, FaEye, FaLightbulb, FaUserTie, FaRocket, FaCheckCircle, FaCopyright, FaUsers} from 'react-icons/fa'
+import {motion} from 'framer-motion'
 
 import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
