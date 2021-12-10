@@ -18,11 +18,11 @@ const Index: NextPage = () =>{
                 <FiMenu onClick={() => document.getElementById("list")!.style.display = "flex"}/>
                 <ul id="list">
                     <li onClick={() => document.getElementById("list")!.style.display = "none"}><FiX id="fechar"/></li>
-                    <li><a>Início</a></li>
-                    <li><a>Parcerias</a></li>
-                    <li><a>Contato</a></li>
-                    <li><a>Quem somos</a></li>
-                    <li><a>Política de Privacidade</a></li>
+                    <li><Link href="/">Início</Link></li>
+                    <li><Link href="/#parcerias">Parcerias</Link></li>
+                    <li><Link href="/#contato">Contato</Link></li>
+                    <li><Link href="/#quem-somos">Quem somos</Link></li>
+                    <li><Link href="/campanhas">Política de Privacidade</Link></li>
                 </ul>
             </div>
         </NavBar>
