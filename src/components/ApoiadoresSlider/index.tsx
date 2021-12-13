@@ -15,6 +15,8 @@ const Slider: NextPage<Props> = ({isMobile}) =>{
     const [execute, setExecute] = React.useState(false)
 
     useEffect(() => {
+        document.getElementById("items")!.style.width = "calc("+ ((document.getElementById("item")!.offsetWidth * 3)) + "px" +" + 180px)";
+
         setInterval(() => {
             setExecute(execute => !execute)
         }, 3000)
@@ -29,16 +31,15 @@ const Slider: NextPage<Props> = ({isMobile}) =>{
 
     function onClickLeft(){
         if(!checkMaxScroll() && document.getElementById("items")){
-            document.getElementById("items")!.scrollLeft -= document.getElementById("item")!.offsetWidth
+            document.getElementById("items")!.scrollLeft -= document.getElementById("item")!.offsetWidth + 60;
             setSlider(slide => (slide - 1) >= 0 ? slide - 1 : 0)
         }
     }
 
     function onClickRight(){
         if(!checkMaxScroll() && document.getElementById("items")){
-            document.getElementById("items")!.scrollLeft += document.getElementById("item")!.offsetWidth
-
-            isMobile ? setSlider(slide => (slide + 1) < 6 ? slide + 1 : 7) : setSlider(slide => (slide + 1) < 5 ? slide + 1 : 5)
+            document.getElementById("items")!.scrollLeft += document.getElementById("item")!.offsetWidth + 60;
+            isMobile ? setSlider(slide => (slide + 1) < 8 ? slide + 1 : 8) : setSlider(slide => (slide + 1) < 6 ? slide + 1 : 6)
         }
     }
 
@@ -58,13 +59,15 @@ const Slider: NextPage<Props> = ({isMobile}) =>{
         <StyledSlider id="parcerias">
             <div>
                 <div id="items">
-                    <Image id="item" src="/first-session/itau.png" alt="Itaú" width="300px" height="300px"/>
-                    <Image src="/first-session/bmg.png" alt="BMG" width="300px" height="300px"/>
-                    <Image src="/first-session/pan.png" alt="Pan" width="300px" height="300px"/>
-                    <Image src="/first-session/ole.png" alt="Ole Consignado" width="300px" height="300px"/>
-                    <Image src="/first-session/daycoval.png" alt="Banco Daycoval" width="300px" height="300px"/>
-                    <Image src="/first-session/banrisul.jpg" alt="Banrisul" width="300px" height="300px"/>
-                    <Image src="/first-session/bradesco.png" alt="Bradesco" width="300px" height="300px"/>
+                    <Image id="item" src="/first-session/itau.webp" alt="Itaú" width="250px" height="250px"/>
+                    <Image src="/first-session/bmg.webp" alt="BMG" width="250px" height="250px"/>
+                    <Image src="/first-session/pan.webp" alt="Pan" width="250px" height="250px"/>
+                    <Image src="/first-session/ole.webp" alt="Ole Consignado" width="250px" height="250px"/>
+                    <Image src="/first-session/agibank.webp" alt="Agibank" width="250px" height="250px"/>
+                    <Image src="/first-session/daycoval.webp" alt="Banco Daycoval" width="250px" height="250px"/>
+                    <Image src="/first-session/banrisul.webp" alt="Banrisul" width="250px" height="250px"/>
+                    <Image src="/first-session/bradesco.webp" alt="Bradesco" width="250px" height="250px"/>
+                    <Image src="/first-session/cetelem.webp" alt="Cetelem" width="250px" height="250px"/>
                 </div>
             </div>
             <div id="contador">
@@ -76,12 +79,14 @@ const Slider: NextPage<Props> = ({isMobile}) =>{
                     <CirculoContador preencher={slider == 3}/>
                     <CirculoContador preencher={slider == 4}/>
                     <CirculoContador preencher={slider == 5}/>
+                    <CirculoContador preencher={slider == 6}/>
 
                     {
                         isMobile ? 
                             (
                                 <>
-                                    <CirculoContador preencher={slider == 6}/>
+                                    <CirculoContador preencher={slider == 7}/>
+                                    <CirculoContador preencher={slider == 8}/>
                                 </>
                             ) :
                             (

@@ -4,9 +4,8 @@ export const StyledSlider = styled.div`
     display: flex;
     flex-direction: column;
     height: 12rem;
-    max-width: 950px;
     align-self: center;
-    margin: 0 0;
+    margin: 1rem 0;
     padding: 0 10px;
 
     > div {
@@ -47,6 +46,10 @@ export const StyledSlider = styled.div`
         margin: 0 1rem;
     }
 
+    #items > span {
+        margin: 0 30px !important;
+    }
+
     @media only screen and (max-width: 600px) {
         width: 300px;
 
@@ -65,6 +68,6 @@ export const CirculoContador = styled.span<CirculoContadorProps>`
     max-width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin: 0 7px;
+    margin: 1rem 7px;
     background-color: ${props => props.preencher ? 'rgba(80, 80, 80);' : 'rgba(150, 150, 150)'};
 `

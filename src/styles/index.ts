@@ -17,15 +17,16 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             background-image: url(${props => props.isMobile ? './first-session/background-mobile.png' : './first-session/background.png'});
             background-attachment: fixed;
             width: 100%;
-            height: ${props => props.isMobile ? '60vh' : '100vh'};
+            height: ${props => props.isMobile ? '55vh' : '100vh'};
             margin: 0;
             padding: 0;
-            background-size: cover;
+            background-size: ${props => props.isMobile ? 'contain' : 'cover'};
+            background-repeat: no-repeat;
             background-position: top;
         }
     }
 
-    main section:nth-child(3) {
+    main section:nth-child(4) {
         background-color: #f9fafb;
         margin-top: 12rem;
         width: 100%;
@@ -51,7 +52,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             justify-content: center;
             align-items: center;
             height: 20rem;
-            width: calc(100% / 4);
+            width: calc(100% / 3);
             
             border-top: 1px solid rgb(220, 220, 220, 0.6);
             transition: border 0.2s linear;
@@ -94,7 +95,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
     }
 
-    main section:nth-child(4){
+    main section:nth-child(5){
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -203,7 +204,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
     }
 
-    main section:nth-child(5) {
+    main section:nth-child(6) {
         padding: 2rem 0;
 
         h2{
@@ -295,7 +296,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
     }
 
-    main section:nth-child(6){
+    main section:nth-child(7){
         width: 100%;
         display: flex;
         align-items: center;
@@ -405,5 +406,27 @@ export const ButtonAreaDoCliente = styled.button`
 
     @media only screen and (max-width: 600px) {
         width: 100px;
+    }
+`
+
+export const ButtonVoltarInicio = styled.button`
+    position: fixed;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    z-index: 9999999999999999;
+    top: 87vh;
+    margin-left: 93vw;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media only screen and (max-width: 600px) {
+        margin-left: 85vw;
     }
 `

@@ -2,13 +2,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import router from 'next/router'
-import {FaSmile, FaEye, FaLightbulb, FaUserTie, FaRocket, FaCheckCircle, FaCopyright, FaUsers} from 'react-icons/fa'
-import {motion} from 'framer-motion'
+import Link from 'next/link'
+import {FaSmile, FaEye, FaLightbulb, FaRocket, FaCopyright, FaUsers, FaArrowUp} from 'react-icons/fa'
 
 import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
 
-import { StyledIndex, ButtonAreaDoCliente } from '../styles'
+import { StyledIndex, ButtonAreaDoCliente, ButtonVoltarInicio } from '../styles'
 import { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 
@@ -39,11 +39,13 @@ const Home: NextPage = () => {
       <main>
         <NavBar/>
 
-        <section>
+        <section id='inicio'>
           <div></div>
           <ButtonAreaDoCliente onClick={() => router.push("https://app1.gerencialcredito.com.br/gruporio/default.asp")}>Área do Parceiro</ButtonAreaDoCliente>
           <ApoiadoresSlider isMobile={isMobile}/>
         </section>
+
+        <ButtonVoltarInicio><Link passHref href="/#inicio"><FaArrowUp/></Link></ButtonVoltarInicio>
 
         <section>
         <h2>Nossos Diferenciais</h2>
@@ -68,33 +70,21 @@ const Home: NextPage = () => {
           </li>
 
           <li>
-            <FaUserTie/>
-            <h3>Liderança</h3>
-            <p>Acreditamos no mérito individual e na preparação pessoal de avanço de cada um!</p>
-          </li>
-
-          <li>
             <FaRocket/>
             <h3>Reconhecimento</h3>
-            <p>Detentores de três prêmios em nosso segmento, estamos engajados com a evolução de nosso trabalho e dos nossos colaboradores!</p>
-          </li>
-
-          <li>
-            <FaCheckCircle/>
-            <h3>Sensatez</h3>
-            <p>Nossa história de sucesso é fundamentada nos princípios da idoneidade e no comprometimento com o nosso cliente!</p>
+            <p>Detentores de inúmeros prêmios de qualidade e produção, conquistamos inequívoco destaque a nível nacional no segmento.</p>
           </li>
 
           <li>
             <FaCopyright/>
-            <h3>Marca</h3>
-            <p>Nossa marca é símbolo da alegria e criatividade que você encontra em nossa cidade-sede!</p>
+            <h3>Sensatez e Marca</h3>
+            <p>Nossa história de sucesso é fundamentada nos princípios da idoneidade e valorização de nossos parceiros.</p>
           </li>
 
           <li>
             <FaUsers/>
-            <h3>Time</h3>
-            <p>Investimos na formação de um time competente e orgulhoso em pertencer a essa organização!</p>
+            <h3>Liderança e Time</h3>
+            <p>Investimos na informação de um time competente e orgulhoso em pertencer a essa organização!</p>
           </li>
         </ul>
         </section>
@@ -175,7 +165,6 @@ const Home: NextPage = () => {
               </div>
             </div>
         </section>
-
         <Footer/>
       </main>
     </StyledIndex>
