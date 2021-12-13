@@ -14,7 +14,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
     main section:nth-child(2){
 
         > div:first-child {
-            background-image: url(${props => props.isMobile ? './first-session/background-mobile.png' : './first-session/background.png'});
+            background-image: url(${props => props.isMobile ? './first-session/background-mobile.webp' : './first-session/background.webp'});
             background-attachment: fixed;
             width: 100%;
             height: ${props => props.isMobile ? '55vh' : '100vh'};
@@ -105,7 +105,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         article {
             width: 100%;
             height: 100vh;
-            background-image: url(${props => props.isMobile ? './quem_somos_mobile.jpg' : './quem_somos_desktop.jpg'});
+            background-image: url(${props => props.isMobile ? './quem_somos_mobile.webp' : './quem_somos_desktop.webp'});
             background-size: cover;
             background-position: center;
             margin-bottom: 3rem;
@@ -216,7 +216,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         form {
-            background-image: url("./contato2.jpg");
+            background-image: url("./contato2.webp");
             background-position: bottom;
             background-size: cover;
             background-attachment: fixed;
