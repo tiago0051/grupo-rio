@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram, FaRegEnvelope } from 'react-icons/fa';
 
 import { FooterStyle } from './style';
@@ -14,6 +15,13 @@ export default function Footer(){
                         <a href="https://www.instagram.com/gruporiopromotora/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
                         <a href="#" target="_blank" rel="noopener noreferrer"><FaRegEnvelope/></a>
                     </div>
+                </div>
+
+                <div className="coluna">
+                    <ul>
+                        <li><Link href="/filiais">Filiais</Link></li>
+                        <li><Link href="/privacidade">Privacidade</Link></li>
+                    </ul>
                 </div>
 
                 <div className="coluna">

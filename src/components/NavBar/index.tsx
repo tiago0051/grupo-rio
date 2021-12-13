@@ -13,8 +13,6 @@ const Index: NextPage = () =>{
                 <li><Link href="/#contato">Contato</Link></li>
                 <li><Link href="/#quem-somos">Quem somos</Link></li>
                 <li><Link href="/campanhas">Campanhas</Link></li>
-                <li><Link href="/filiais">Filiais</Link></li>
-                <li><Link href="/privacidade">Privacidade</Link></li>
             </ul>
             <div id="mobile">
                 <FiMenu onClick={() => document.getElementById("list")!.style.display = "flex"}/>
@@ -25,8 +23,6 @@ const Index: NextPage = () =>{
                     <li><Link href="/#contato">Contato</Link></li>
                     <li><Link href="/#quem-somos">Quem somos</Link></li>
                     <li><Link href="/campanhas">Campanhas</Link></li>
-                    <li><Link href="/filiais">Filiais</Link></li>
-                    <li><Link href="/privacidade">Privacidade</Link></li>
                 </ul>
             </div>
         </NavBar>
