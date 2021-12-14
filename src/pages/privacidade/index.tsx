@@ -1,4 +1,8 @@
+/* eslint-disable @next/next/link-passhref */
 import Head from 'next/head'
+import {FiDownload} from 'react-icons/fi'
+import Link from 'next/link'
+import Image from 'next/image'
 
 import { PrivacidadeStyled } from "../../styles/privacidade"
 
@@ -117,6 +121,42 @@ export default function Privacidade(){
                 E-mail: gruporio.dpo@rjgrupo.com.br<br/>
                 Telefone: (21)3505-7560
                 </article>
+
+                <h2>ANEXOS</h2>
+
+                <div id="anexos">
+                    <Link href="/privacidade/anexos/LGPD_Aviso-de-privacidade-dos-Fornecedores-jupiter.pdf">
+                        <div>
+                            <Image src="/privacidade/anexo.svg" alt="Aviso de privacidade dos fornecedores jupiter" width={100} height={100}/>
+                            <p>LGPD_Aviso de privacidade dos Fornecedores jupiter</p>
+                            <FiDownload/>
+                        </div>
+                    </Link>
+
+                    <Link href="/privacidade/anexos/LGPD_Política-de-atendimento-dos-direitos-dos-titulares-dos-dados-espaço-JUPITER.pdf">
+                        <div>
+                            <Image src="/privacidade/anexo.svg" alt="Aviso de privacidade dos fornecedores jupiter" width={100} height={100}/>
+                            <p>LGPD_Política de atendimento dos direitos dos titulares dos dados espaço - JUPITER</p>
+                            <FiDownload/>
+                        </div>
+                    </Link>
+
+                    <Link href="/privacidade/anexos/LGPD_Aviso-de-Privacidade-para-Colaboradores-e-Terceiros-jupiter.pdf">
+                        <div>
+                            <Image src="/privacidade/anexo.svg" alt="LGPD_Aviso de Privacidade para Colaboradores e Terceiros - jupiter" width={100} height={100}/>
+                            <p>LGPD_Aviso de Privacidade para Colaboradores e Terceiros - jupiter</p>
+                            <FiDownload/>
+                        </div>
+                    </Link>
+
+                    <Link href="/privacidade/anexos/LGPD_Aviso-de-privacidade-dos-CLIENTES-jupiter.pdf">
+                        <div>
+                            <Image src="/privacidade/anexo.svg" alt="LGPD_Aviso de privacidade dos CLIENTES jupiter" width={100} height={100}/>
+                            <p>LGPD_Aviso de privacidade dos CLIENTES jupiter</p>
+                            <FiDownload/>
+                        </div>
+                    </Link>
+                </div>
             </section>
 
             <Footer/>

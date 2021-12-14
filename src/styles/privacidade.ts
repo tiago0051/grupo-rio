@@ -53,5 +53,45 @@ export const PrivacidadeStyled = styled.main`
         article {
             font-weight: 700;
         }
+
+        #anexos {
+            display: flex;
+            flex-direction: row;
+            max-width: 1080px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(230, 230, 230);
+                border-radius: 10px;
+                padding: 1rem;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                width: 46%;
+                margin: 1%;
+            }
+
+            div:hover svg{
+                color: #EF985A;
+            }
+
+            p {
+                width: 60%;
+            }
+            
+            svg {
+                font-size: 3rem;
+                transition: color 0.2s linear;
+            }
+
+            @media only screen and (max-width: 600px) {
+                div {
+                    width: 90%;
+                }
+            }
+        }
     }
 `
