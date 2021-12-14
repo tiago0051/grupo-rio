@@ -61,7 +61,7 @@ export const PrivacidadeStyled = styled.main`
             justify-content: space-between;
             flex-wrap: wrap;
 
-            div {
+            a {
                 display: flex;
                 flex-direction: row;
                 background-color: rgb(230, 230, 230);
