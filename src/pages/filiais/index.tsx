@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Navbar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 
-import { FiliaisStyled } from './style'
+import { FiliaisStyled } from '../../styles/filiais'
 
 export default function Filiais(){
     return(

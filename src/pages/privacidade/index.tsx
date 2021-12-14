@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { PrivacidadeStyled } from "./style"
+import { PrivacidadeStyled } from "../../styles/privacidade"
 
 import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'

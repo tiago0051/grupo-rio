@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import { StyledAreaDoParceiro } from "./style"
+import { StyledAreaDoParceiro } from "../../styles/area-do-parceiro"
 import { FiUser, FiKey, FiLogIn } from 'react-icons/fi'
 
 export default function AreaDoParceiro() {
