@@ -7,6 +7,7 @@ export const FooterStyle = styled.footer`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 
     .linha {
         display: flex;
@@ -47,6 +48,10 @@ export const FooterStyle = styled.footer`
         border-bottom: 1px solid #2925f4;
     }
 
+    ul {
+        list-style: none;
+    }
+
     @media only screen and (max-width: 600px) {
         .linha {
             flex-direction: column;
@@ -54,6 +59,11 @@ export const FooterStyle = styled.footer`
 
         #redes-sociais {
             margin-bottom: 4rem;
+        }
+
+        #links {
+            align-self: flex-start;
+            margin-bottom: 3rem;
         }
     }
 `

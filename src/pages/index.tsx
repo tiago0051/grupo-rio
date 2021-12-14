@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import router from 'next/router'
 import Link from 'next/link'
 import {FaSmile, FaEye, FaLightbulb, FaRocket, FaCopyright, FaUsers, FaArrowUp} from 'react-icons/fa'
 
@@ -41,7 +40,7 @@ const Home: NextPage = () => {
 
         <section id='inicio'>
           <div></div>
-          <ButtonAreaDoCliente onClick={() => router.push("https://app1.gerencialcredito.com.br/gruporio/default.asp")}>Área do Parceiro</ButtonAreaDoCliente>
+          <ButtonAreaDoCliente><Link href="/area-do-parceiro">Área do Parceiro</Link></ButtonAreaDoCliente>
           <ApoiadoresSlider isMobile={isMobile}/>
         </section>
 
