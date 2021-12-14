@@ -167,5 +167,11 @@ export const CampanhaStyled = styled.main<CampanhaProps>`
             object-fit: cover;
             border-radius: 10px;
         }
+
+        @media only screen and (max-width: 600px) {
+            div {
+                width: calc(100% / 1);
+            }
+        }
     }
 `
