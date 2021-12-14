@@ -111,3 +111,61 @@ export const Artigo = styled.article<ArtigoProps>`
         }
     }
 `
+
+interface CampanhaProps {
+    nome: string
+}
+
+export const CampanhaStyled = styled.main<CampanhaProps>`
+    section:nth-child(2) {
+        background-color: black;
+        width: 100%;
+        height: 70vh;
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            z-index: 1;
+            color: white;
+        }
+    }
+
+    section:nth-child(2)::after {
+        content: "";
+        background: url("${props => "/campanhas/galeria/" + props.nome + "/3.jpg"}");
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;  
+    }
+
+    section:nth-child(3) {
+        padding: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div {
+            width: calc(100% / 3);
+            padding: 1%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+`

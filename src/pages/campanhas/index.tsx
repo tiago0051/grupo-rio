@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
@@ -24,59 +25,71 @@ export default function Index(){
                 <h2>Campanhas Passadas</h2>
 
                 <div>
-                    <Artigo img="/campanhas/a-liga-dos-super-vendedores/index.jpg">
-                        <div>
-                            <h3>A Liga dos Super Vendedores</h3>
-                            <p>2014</p>
-                        </div>
+                    <Link href="/campanhas/A liga dos super vendedores" passHref>
+                        <Artigo img="/campanhas/a-liga-dos-super-vendedores/index.jpg">
+                            <div>
+                                <h3>A Liga dos Super Vendedores</h3>
+                                <p>2014</p>
+                            </div>
 
-                        <div/>
-                    </Artigo>
+                            <div/>
+                        </Artigo>
+                    </Link>
 
-                    <Artigo img="/campanhas/bmg-folia/index.jpg">
-                        <div>
-                            <h3>BMG Folia</h3>
-                            <p>2015</p>
-                        </div>
+                    <Link href="/campanhas/BMG folia" passHref>
+                        <Artigo img="/campanhas/bmg-folia/index.jpg">
+                            <div>
+                                <h3>BMG Folia</h3>
+                                <p>2015</p>
+                            </div>
 
-                        <div/>
-                    </Artigo>
+                            <div/>
+                        </Artigo>
+                    </Link>
 
-                    <Artigo img="/campanhas/copa-do-mundo-bmg/index.jpg">
-                        <div>
-                            <h3>Copa do Mundo BMG</h3>
-                            <p>2014</p>
-                        </div>
+                    <Link href="/campanhas/Copa do mundo" passHref>
+                        <Artigo img="/campanhas/copa-do-mundo-bmg/index.jpg">
+                            <div>
+                                <h3>Copa do Mundo BMG</h3>
+                                <p>2014</p>
+                            </div>
 
-                        <div/>
-                    </Artigo>
+                            <div/>
+                        </Artigo>
+                    </Link>
 
-                    <Artigo img="/campanhas/carnamar/index.jpg">
-                        <div>
-                            <h3>Carnamar BMG</h3>
-                            <p>2014</p>
-                        </div>
+                    <Link href="/campanhas/Carnamar BMG" passHref>
+                        <Artigo img="/campanhas/carnamar/index.jpg">
+                            <div>
+                                <h3>Carnamar BMG</h3>
+                                <p>2014</p>
+                            </div>
 
-                        <div/>
-                    </Artigo>
+                            <div/>
+                        </Artigo>
+                    </Link>
 
-                    <Artigo img="/campanhas/mundo-magico/index.jpg">
-                        <div>
-                            <h3>Mundo Mágico</h3>
-                            <p>2013</p>
-                        </div>
+                    <Link href="/campanhas/Mundo magico" passHref>
+                        <Artigo img="/campanhas/mundo-magico/index.jpg">
+                            <div>
+                                <h3>Mundo Mágico</h3>
+                                <p>2013</p>
+                            </div>
 
-                        <div/>
-                    </Artigo>
+                            <div/>
+                        </Artigo>
+                    </Link>
 
-                    <Artigo img="/campanhas/copa-do-mundo-2010/index.jpg">
-                        <div>
-                            <h3>Copa do Mundo BMG</h3>
-                            <p>2010</p>
-                        </div>
+                    <Link href="/campanhas/Copa do mundo 2010" passHref>
+                        <Artigo img="/campanhas/copa-do-mundo-2010/index.jpg">
+                            <div>
+                                <h3>Copa do Mundo BMG</h3>
+                                <p>2010</p>
+                            </div>
 
-                        <div/>
-                    </Artigo>
+                            <div/>
+                        </Artigo>
+                    </Link>
                 </div>
 
             </section>
