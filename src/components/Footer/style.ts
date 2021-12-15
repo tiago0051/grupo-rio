@@ -52,10 +52,27 @@ export const FooterStyle = styled.footer`
         list-style: none;
     }
 
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #links a{
         font-weight: 400;
         font-style: normal;
         border: 0;
+        
+    }
+
+    #links li {
+        margin: 0.2rem;
+    }
+
+    #links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #links a:hover {

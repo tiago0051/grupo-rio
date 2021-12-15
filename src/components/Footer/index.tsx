@@ -20,6 +20,12 @@ export default function Footer(){
                 <div className="coluna" id="links">
                     <h3>LINKS</h3>
                     <ul>
+                        <li><Link href="/">Início</Link></li>
+                        <li><Link href="/#parcerias">Parcerias</Link></li>
+                        <li><Link href="/#contato">Contato</Link></li>
+                        <li><Link href="/#quem-somos">Quem somos</Link></li>
+                        <li><Link href="/campanhas">Campanhas</Link></li>
+                        <li><Link href="/filiais">Filiais</Link></li>
                         <li><Link href="/privacidade">Privacidade</Link></li>
                     </ul>
                 </div>
