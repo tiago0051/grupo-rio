@@ -63,8 +63,8 @@ const Slider: NextPage<Props> = ({isMobile}) =>{
                     <Image src="/first-session/bmg.webp" alt="BMG" width="200px" height="200px"/>
                     <Image src="/first-session/pan.webp" alt="Pan" width="200px" height="200px"/>
                     <Image src="/first-session/ole.webp" alt="Ole Consignado" width="200px" height="200px"/>
-                    <Image src="/first-session/agibank.webp" alt="Agibank" width="200px" height="200px"/>
-                    <Image src="/first-session/daycoval.webp" alt="Banco Daycoval" width="200px" height="200px"/>
+                    <Image src="/first-session/agibank-logo.svg" alt="Agibank" width="200px" height="200px"/>
+                    <Image src="/first-session/daycoval.svg" alt="Banco Daycoval" width="200px" height="200px"/>
                     <Image src="/first-session/banrisul.webp" alt="Banrisul" width="200px" height="200px"/>
                     <Image src="/first-session/bradesco.webp" alt="Bradesco" width="200px" height="200px"/>
                     <Image src="/first-session/cetelem.webp" alt="Cetelem" width="200px" height="200px"/>
