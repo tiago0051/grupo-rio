@@ -56,6 +56,7 @@ export const FooterStyle = styled.footer`
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     #links a{
@@ -66,12 +67,15 @@ export const FooterStyle = styled.footer`
     }
 
     #links li {
-        margin: 0.2rem;
+        margin: 1rem;
     }
 
     #links ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
         align-items: center;
     }
 
