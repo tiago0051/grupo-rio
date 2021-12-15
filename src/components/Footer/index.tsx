@@ -18,6 +18,7 @@ export default function Footer(){
                 </div>
 
                 <div className="coluna" id="links">
+                    <h3>LINKS</h3>
                     <ul>
                         <li><Link href="/privacidade">Privacidade</Link></li>
                     </ul>

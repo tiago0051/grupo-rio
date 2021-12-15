@@ -52,6 +52,16 @@ export const FooterStyle = styled.footer`
         list-style: none;
     }
 
+    #links a{
+        font-weight: 400;
+        font-style: normal;
+        border: 0;
+    }
+
+    #links a:hover {
+        border-bottom: 1px solid #2925f4;
+    }
+
     @media only screen and (max-width: 600px) {
         a{
             align-self: flex-start;
