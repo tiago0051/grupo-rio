@@ -53,8 +53,12 @@ export const FooterStyle = styled.footer`
     }
 
     @media only screen and (max-width: 600px) {
+        a{
+            align-self: flex-start;
+        }
         .linha {
             flex-direction: column;
+            align-self: flex-start;
         }
 
         #redes-sociais {
