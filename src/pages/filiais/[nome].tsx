@@ -1,4 +1,5 @@
 import { GetServerSideProps } from "next"
+import Head from "next/head"
 
 import NavBar from "../../components/NavBar"
 import Footer from "../../components/Footer"
@@ -12,6 +13,9 @@ interface FilialProps {
 export default function Filial(props : FilialProps) {
     return(
         <StyledFilial img={props.filial.imagem}>
+            <Head>
+                <title>Grupo Rio - {props.filial.nome}</title>
+            </Head>
             <NavBar/>
 
             <section>
