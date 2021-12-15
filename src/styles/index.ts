@@ -35,6 +35,10 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         justify-items: center;
         padding: 3rem;
 
+        h2 {
+            font-size: 2.7rem;
+        }
+
         ul {
             margin-top: 2rem;
             width: 100%;

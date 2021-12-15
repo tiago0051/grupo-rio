@@ -4,6 +4,9 @@ export const PrivacidadeStyled = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
 
     section:nth-child(2){
         background-image: url("/privacidade/background.png");
@@ -24,6 +27,10 @@ export const PrivacidadeStyled = styled.main`
     section:nth-child(3){
         max-width: 1080px;
         padding: 1rem;
+
+        li {
+            font-weight: 700;
+        }
 
         h2 {
             font-size: 2rem;
@@ -88,8 +95,9 @@ export const PrivacidadeStyled = styled.main`
             }
 
             @media only screen and (max-width: 600px) {
-                div {
-                    width: 90%;
+                a {
+                    padding: 0;
+                    width: 100%;
                 }
             }
         }

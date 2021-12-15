@@ -71,10 +71,12 @@ export default function Privacidade(){
 
                 <p>
                 O GRUPO RIO pode compartilhar seu website com terceiros, na medida necessária para atingir os fins específicos de nosso website, quais sejam:<br/>
-                <b>empresas de hospedagem do website.</b><br/>
-                <b>plataformas de gerenciamento do website.</b><br/>
-                <b>empresas de serviços de operação de dados em nuvem.</b><br/>
-                <b>aplicações de comunicação via internet.</b><br/>
+                <ul>
+                    <li>Empresas de hospedagem do website.</li>
+                    <li>Plataformas de gerenciamento do website.</li>
+                    <li>Empresas de serviços de operação de dados em nuvem.</li>
+                    <li>Aplicações de comunicação via internet.</li>
+                </ul>
                 As empresas terceiras que fornecem funcionalidades especiais a nosso website por meio de suas aplicações próprias poderão coletar e utilizar dados pessoais conforme suas próprias políticas de privacidade.<br/>
                 Recomendamos que verifiquem as políticas de privacidade providenciados no momento da utilização dessas funcionalidades.
                 </p>
@@ -83,15 +85,17 @@ export default function Privacidade(){
 
                 <p>
                 Nós garantimos os seguintes direitos aos usuários com relação à coleta e uso de dados por meio de nosso website, em adição a outros direitos previstos na legislação aplicável:<br/>
-                <b>a confirmação de existência de tratamento de seus dados pessoais por nós.</b><br/>
-                <b>o acesso aos dados detidos por essa entidade.</b><br/>
-                <b>a correção de eventuais dados incompletos, inexatos ou desatualizados.</b><br/>
-                <b>o bloqueio, a eliminação ou a anonimização de dados desnecessários, excessivos ou tratados em desconformidade com a legislação, bem como oposição ao tratamento desses dados nas mesmas hipóteses.</b><br/>
-                <b>portabilidade dos seus dados pessoais a outra empresa, na medida em que seja exigida por regulamentos oficiais sobre o assunto.</b><br/>
-                <b>a eliminação, quando requerida, dos dados pessoais coletados mediante seu consentimento, na forma da legislação aplicável.</b><br/>
-                <b>informação das entidades públicas e privadas com as quais houve uso compartilhado de seus dados.</b><br/>
-                <b>informação sobre a possibilidade de não fornecer seu consentimento e sobre as consequências da negativa, nos casos em que seus dados forem coletados e tratados mediante consentimento.</b><br/>
-                <b>a revogação do seu consentimento para coleta e tratamento de dados nestes mesmos casos.</b><br/>
+                <ul>
+                    <li>A confirmação de existência de tratamento de seus dados pessoais por nós.</li>
+                    <li>O acesso aos dados detidos por essa entidade.</li>
+                    <li>A correção de eventuais dados incompletos, inexatos ou desatualizados.</li>
+                    <li>O bloqueio, a eliminação ou a anonimização de dados desnecessários, excessivos ou tratados em desconformidade com a legislação, bem como oposição ao tratamento desses dados nas mesmas hipóteses.</li>
+                    <li>Portabilidade dos seus dados pessoais a outra empresa, na medida em que seja exigida por regulamentos oficiais sobre o assunto.</li>
+                    <li>A eliminação, quando requerida, dos dados pessoais coletados mediante seu consentimento, na forma da legislação aplicável.</li>
+                    <li>Informação das entidades públicas e privadas com as quais houve uso compartilhado de seus dados.</li>
+                    <li>Informação sobre a possibilidade de não fornecer seu consentimento e sobre as consequências da negativa, nos casos em que seus dados forem coletados e tratados mediante consentimento.</li>
+                    <li>A revogação do seu consentimento para coleta e tratamento de dados nestes mesmos casos.</li>
+                </ul>
                 Seus direitos poderão ser exercidos mediante contato feito através dos nossos canais de atendimento listados abaixo. Caso esteja insatisfeito, a legislação brasileira garante a você a possibilidade de levar sua reclamação à ANPD – Autoridade Nacional de Proteção de Dados Pessoais.
                 </p>
                 
