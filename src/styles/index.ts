@@ -212,6 +212,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         padding: 2rem 0;
 
         h2{
+            padding: 1rem;
             text-align: center;
             margin-bottom: 2rem;
             font-size: 5rem;
@@ -232,6 +233,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             color: white;
             font-weight: 700;
             align-items: center;
+            width: 100%;
         }
 
         div {
@@ -245,6 +247,8 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             border: 2px solid white;
             border-radius: 3px;
             margin-bottom: 2rem;
+            padding: 5px 10px;
+            width: 100%;
         }
 
         button {
@@ -254,12 +258,17 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             border-radius: 4px;
             background-color: #ED7E36;
             color: white;
-            box-shadow: 0 3px 5px 2px rgb(0, 0, 0, 0.3)
+            box-shadow: 0 3px 5px 2px rgb(0, 0, 0, 0.3);
+            cursor: pointer;
         }
 
         p {
             font-size: 4rem;
             width: 50%;
+        }
+
+        span {
+            font-size: 1rem;
         }
 
         @media only screen and (max-width: 600px) {

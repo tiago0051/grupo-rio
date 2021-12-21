@@ -8,8 +8,9 @@ import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
 
 import { StyledIndex, ButtonAreaDoCliente, ButtonVoltarInicio } from '../styles'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
+import axios from 'axios'
 
 const Home: NextPage = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -25,6 +26,32 @@ const Home: NextPage = () => {
       setIsMobile(false);
     }
   }, [])
+
+  const [formNome, setFormNome] = useState('')
+  const [formSobrenome, setFormSobrenome] = useState('')
+  const [formTelefone, setFormTelefone] = useState('')
+  const [formEmail, setFormEmail] = useState('')
+
+  const [formResposta, setFormResposta] = useState('')
+
+  function handleSubmit(event: React.SyntheticEvent) {
+    event.preventDefault()
+
+    if(formNome === '' || formSobrenome === '' || formTelefone === '' || formEmail === '') {
+      setFormResposta('Preencha todos os campos')
+      return;
+    }
+
+    axios.post("/api/contact", {nome: formNome, sobrenome: formSobrenome, telefone: formTelefone, email: formEmail}).then(res => {
+      if(res.data.enviado){
+        (document.getElementById("botaoFormulario") as HTMLButtonElement).disabled = true;
+        (document.getElementById("botaoFormulario") as HTMLButtonElement).style.opacity = "0.5";
+        setFormResposta('Enviado com sucesso. Em breve entraremos em contato!')
+      }else{
+        setFormResposta('Erro ao enviar. Tente novamente mais tarde')
+      }
+    })
+  }
 
   return (
     <StyledIndex isMobile={isMobile}>
@@ -108,21 +135,22 @@ const Home: NextPage = () => {
         </section>
 
         <section id="contato">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="Nome">Nome</label>
-              <input name="Nome" type="text"/>
+              <input name="Nome" type="text" onChange={(event) => setFormNome(event.target.value)}/>
 
               <label htmlFor="Sobrenome">Sobrenome</label>
-              <input name="Sobrenome" type="text"/>
+              <input name="Sobrenome" type="text" onChange={(event) => setFormSobrenome(event.target.value)}/>
 
               <label htmlFor="Telefone">Telefone</label>
-              <input name="Telefone" type="text"/>
+              <input name="Telefone" type="text" onChange={(event) => setFormTelefone(event.target.value)}/>
 
               <label htmlFor="Email">Email</label>
-              <input name="Email" type="email"/>
+              <input name="Email" type="email" onChange={(event) => setFormEmail(event.target.value)}/>
 
-              <button>Enviar</button>
+              <span>{formResposta}</span>
+              <button type='submit' id="botaoFormulario">Enviar</button>
             </div>
 
             <h2>Seja nosso Parceiro</h2>
