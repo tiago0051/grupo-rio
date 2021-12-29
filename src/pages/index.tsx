@@ -122,7 +122,7 @@ const Home: NextPage = () => {
               <h3>Maria Augusta</h3>
               <span>CEO | Grupo Rio</span>
 
-              <Image src="/maria-augusta.jpg" alt="Maria Augusta" width="200px" height="200px" layout="fixed"/>
+              <Image src="/maria-augusta.webp" alt="Maria Augusta" width="200px" height="200px" layout="fixed"/>
               <p>“Nunca foi sorte, sempre foi Deus.”</p>
             </div>
 

@@ -69,7 +69,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         svg {
             margin-bottom: 1rem;
             font-size: 5rem;
-            color: rgba(255,105,0,1);
+            color: rgb(65,88,208);
         }
 
         h3 {
@@ -256,7 +256,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             padding: 0.5rem 2rem;
             border: 0;
             border-radius: 4px;
-            background-color: #ED7E36;
+            background-color: rgb(65,88,208);
             color: white;
             box-shadow: 0 3px 5px 2px rgb(0, 0, 0, 0.3);
             cursor: pointer;

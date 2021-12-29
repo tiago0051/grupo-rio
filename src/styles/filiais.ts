@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const FiliaisStyled = styled.main`
 
     section:nth-child(2) {
-        background-image: url('/filiais/background.png');
+        background-image: url('/filiais/background.webp');
         height: 50vh;
         width: 100%;
         background-size: cover;
@@ -24,7 +24,7 @@ export const FiliaisStyled = styled.main`
 
         h3 {
             font-size: 1.2rem;
-            color: #EF985A;
+            color: rgb(65,88,208);
             margin: 1rem 0;
         }
 
@@ -50,7 +50,7 @@ export const FiliaisStyled = styled.main`
 
         div > h2 {
             font-size: 2rem;
-            color: #EF985A;
+            color: rgb(65,88,208);
             font-weight: 700;
             margin-top: 1rem;
         }
@@ -127,7 +127,7 @@ export const StyledFilial = styled.main<FilialProps>`
         text-align: center;
 
         h2 {
-            color: #EF985A;
+            color: rgb(65,88,208);
             font-size: 2rem;
             margin: 1rem 0;
         }

@@ -9,7 +9,7 @@ export const PrivacidadeStyled = styled.main`
     margin: 0;
 
     section:nth-child(2){
-        background-image: url("/privacidade/background.png");
+        background-image: url("/privacidade/background.webp");
         height: 50vh;
         width: 100%;
         background-size: cover;
@@ -34,13 +34,13 @@ export const PrivacidadeStyled = styled.main`
 
         h2 {
             font-size: 2rem;
-            color: #EF985A;
+            color: rgb(65,88,208);
             font-weight: 700;
             margin: 2rem 0;
         }
 
         h3 {
-            color: #EF985A;
+            color: rgb(65,88,208);
             font-weight: 700;
             font-size: 1.2rem;
             margin: 1rem 0;
@@ -82,7 +82,7 @@ export const PrivacidadeStyled = styled.main`
             }
 
             div:hover svg{
-                color: #EF985A;
+                color: rgb(65,88,208);
             }
 
             p {

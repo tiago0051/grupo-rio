@@ -4,7 +4,7 @@ export const StyledCampanhas = styled.main`
     section:nth-child(1) {
         height: 50vh;
         width: 100%;
-        background-image: url("/campanhas/index.jpg");
+        background-image: url("/campanhas/index.webp");
         background-position: center;
         background-size: cover;
         position: relative;

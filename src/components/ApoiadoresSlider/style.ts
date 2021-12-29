@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledSlider = styled.div`
     display: flex;
     flex-direction: column;
-    height: 6rem;
+    height: 4rem;
     align-self: center;
     margin: 1rem 0;
     padding: 0 10px;

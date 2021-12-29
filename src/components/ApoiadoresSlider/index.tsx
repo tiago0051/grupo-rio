@@ -59,15 +59,15 @@ const Slider: NextPage<Props> = ({isMobile}) =>{
         <StyledSlider id="parcerias">
             <div>
                 <div id="items">
-                    <Image id="item" src="/first-session/itau.webp" alt="Itaú" width="200px" height="200px"/>
-                    <Image src="/first-session/bmg.webp" alt="BMG" width="200px" height="200px"/>
-                    <Image src="/first-session/pan.webp" alt="Pan" width="200px" height="200px"/>
-                    <Image src="/first-session/ole.webp" alt="Ole Consignado" width="200px" height="200px"/>
-                    <Image src="/first-session/agibank-logo.svg" alt="Agibank" width="200px" height="200px"/>
-                    <Image src="/first-session/daycoval.svg" alt="Banco Daycoval" width="200px" height="200px"/>
-                    <Image src="/first-session/banrisul.webp" alt="Banrisul" width="200px" height="200px"/>
-                    <Image src="/first-session/bradesco.webp" alt="Bradesco" width="200px" height="200px"/>
-                    <Image src="/first-session/cetelem.webp" alt="Cetelem" width="200px" height="200px"/>
+                    <Image id="item" src="/first-session/itau.webp" alt="Itaú" width="150px" height="150px"/>
+                    <Image src="/first-session/bmg.webp" alt="BMG" width="150px" height="150px"/>
+                    <Image src="/first-session/pan.webp" alt="Pan" width="150px" height="150px"/>
+                    <Image src="/first-session/ole.webp" alt="Ole Consignado" width="150px" height="150px"/>
+                    <Image src="/first-session/agibank-logo.svg" alt="Agibank" width="150px" height="150px"/>
+                    <Image src="/first-session/daycoval.svg" alt="Banco Daycoval" width="150px" height="150px"/>
+                    <Image src="/first-session/banrisul.webp" alt="Banrisul" width="150px" height="150px"/>
+                    <Image src="/first-session/bradesco.webp" alt="Bradesco" width="150px" height="150px"/>
+                    <Image src="/first-session/cetelem.webp" alt="Cetelem" width="150px" height="150px"/>
                 </div>
             </div>
             <div id="contador">
