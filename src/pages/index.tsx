@@ -159,7 +159,7 @@ const Home: NextPage = () => {
       
         <section>
           <div>
-            <h2>Depoimentos de nossos corretores</h2>
+            <h2>Depoimentos de nossos parceiros</h2>
           </div>
 
           <div>
