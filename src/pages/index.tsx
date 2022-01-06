@@ -165,27 +165,33 @@ const Home: NextPage = () => {
           <div>
               <div>
                 <div className="Image">
-                  <Image src="/joão-santos.jpg" alt="João Santos" width="86px" height="86px" layout="fixed"/>
+                  <Image src="/Rosangela-Botelho.webp" alt="João Santos" width="86px" height="86px" layout="fixed"/>
                 </div>
 
                 <div>
                   <p>
-                    Muito me orgulha fazer parte do quadro de parceiros do Grupo Rio, uma organização que participo como colaborador desde sua fundação. E, por isso, posso afirmar com absoluta segurança que seu estrondoso crescimento, que não para, é resultado do alto grau de comprometimento com o seu negócio, tratando seus parceiros com muita ética, utilizando ferramentas de alta tecnologia e produtividade, mantendo o seu quadro pessoal de funcionários sempre preparados e comprometidos com a Empresa. Por tudo isso é que hoje o Grupo Rio é considerado uma das maiores promotoras do País.
+                  Eu quero agradecer ao Grupo Rio e toda  sua maravilhosa equipe de supervisores,atendentes,gerentes todo o carinho e profissionalismo por nos corretores, muito grata a vocês eu sou pela confiança e credibilidade ao meu trabalho...<br/>
+                  Desejo um 2022 recheado de coisas maravilhosas!!!<br/>
+                  Deus os abençoe!!!<br/>
+                  Um beijo no coração de cada um de vocês🌹❤️😘👏🙏🙏🙏
                   </p>
-                  <h4>JOÃO SANTOS, COLABORADOR</h4>
+                  <h4>Rosangela Botelho Damian</h4>
                 </div>
               </div>
 
               <div>
                 <div className="Image">
-                  <Image src="/silva-santos.jpg" alt="Silva Santos" width="86px" height="86px" layout="fixed"/>
+                  <Image src="/Claudia-Moura.webp" alt="Silva Santos" width="86px" height="86px" layout="fixed"/>
                 </div>
 
                 <div>
                   <p>
-                  Eu, minha família e empresa, viemos através deste texto, agradecer a confiança, respeito, dedicação e a amizade por esses longos anos em que trabalhamos com esta parceria. Costumo dizer que o nosso bom relacionamento é o segredo do nosso sucesso e não me canso de agradecer, todos os dias em minhas orações, por ter a oportunidade de trabalhar com esse grupo. Tudo que conquistei materialmente, primeiramente, agradeço a Deus, e depois a vocês. Estamos juntos, sempre!
+                  Venho agradecer pela parceria de vocês, e comprometimento em manter sempre o que foi combinado com a seus parceiros. E até mesmo algumas vezes saindo do que é da alçada de vocês ,pra fazer o possível e o impossível para melhor nos atender.<br/>
+                  Somos uma família Grupo Rio, quero agradecer pela parceria de todos esses longos anos e confiança no trabalho dessa empresa que faz crescer cada dia mais.<br/>
+                  Agradecer também o carinho e respeito que sempre fui tratada por toda equipe.<br/>
+                  Estamos juntos, sempre.
                   </p>
-                  <h4>SILVIA SANTOS (GÊNESIS CRED), PARCEIRA</h4>
+                  <h4>Claudia Moura</h4>
                 </div>
               </div>
             </div>

@@ -6,6 +6,7 @@ import Navbar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 
 import { FiliaisStyled } from '../../styles/filiais'
+import { motion } from 'framer-motion'
 
 export default function Filiais(){
     return(
@@ -16,7 +17,7 @@ export default function Filiais(){
             <Navbar/>
 
             <section>
-                <h1>FILIAIS</h1>
+                <motion.h1 initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{duration: 1, ease: "backInOut"}}>FILIAIS</motion.h1>
             </section>
 
             <section>

@@ -5,6 +5,7 @@ import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
 import {StyledCampanhas, Artigo} from '../../styles/campanhas'
+import { motion } from 'framer-motion';
 
 export default function Index(){
     return(
@@ -16,7 +17,7 @@ export default function Index(){
             <section>
                 <NavBar/>
                 <div>
-                    <h1>Campanhas</h1>
+                    <motion.h1 initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{duration: 1, ease: "backInOut"}}>Campanhas</motion.h1>
                 </div>
             </section>
 

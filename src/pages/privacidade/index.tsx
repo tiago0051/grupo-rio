@@ -8,6 +8,7 @@ import { PrivacidadeStyled } from "../../styles/privacidade"
 
 import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
+import { motion } from 'framer-motion'
 
 export default function Privacidade(){
     return(
@@ -19,7 +20,7 @@ export default function Privacidade(){
             <NavBar/>
 
             <section>
-                <h1>PRIVACIDADE</h1>
+                <motion.h1 initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{duration: 1, ease: "backInOut"}}>PRIVACIDADE</motion.h1>
             </section>
 
             <section>
