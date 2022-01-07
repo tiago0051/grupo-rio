@@ -11,6 +11,7 @@ import { StyledIndex, ButtonAreaDoCliente, ButtonVoltarInicio } from '../styles'
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import axios from 'axios'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const Home: NextPage = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -25,6 +26,10 @@ const Home: NextPage = () => {
     } else {
       setIsMobile(false);
     }
+
+    setInterval(() => {
+      setPositionSlideDepoimentos(posição => posição < 2 ? posição + 1 : 0)
+  }, 5000)
   }, [])
 
   const [formNome, setFormNome] = useState('')
@@ -33,6 +38,8 @@ const Home: NextPage = () => {
   const [formEmail, setFormEmail] = useState('')
 
   const [formResposta, setFormResposta] = useState('')
+
+  const [positionSlideDepoimentos, setPositionSlideDepoimentos] = useState(0)
 
   function handleSubmit(event: React.SyntheticEvent) {
     event.preventDefault()
@@ -51,6 +58,97 @@ const Home: NextPage = () => {
         setFormResposta('Erro ao enviar. Tente novamente mais tarde')
       }
     })
+  }
+
+  function DepoimentoRosangela(){
+    return (
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Claudia"}>
+        <div className="Image">
+          <Image src="/Rosangela-Botelho.webp" alt="Rosangela Botelho" width="86px" height="86px" layout="fixed"/>
+        </div>
+
+        <div>
+          <p>
+          Eu quero agradecer ao Grupo Rio e toda  sua maravilhosa equipe de supervisores,atendentes,gerentes todo o carinho e profissionalismo por nos corretores, muito grata a vocês eu sou pela confiança e credibilidade ao meu trabalho...<br/>
+          Desejo um 2022 recheado de coisas maravilhosas!!!<br/>
+          Deus os abençoe!!!<br/>
+          Um beijo no coração de cada um de vocês🌹❤️😘👏🙏🙏🙏
+          </p>
+          <h4>Rosangela Botelho Damian</h4>
+        </div>
+      </motion.div>
+    )
+  }
+
+  function DepoimentoClaudia() {
+    return(
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Rosangela"}>
+        <div className="Image">
+          <Image src="/Claudia-Moura.webp" alt="Claudia Moura" width="86px" height="86px" layout="fixed"/>
+        </div>
+
+        <div>
+          <p>
+          Venho agradecer pela parceria de vocês, e comprometimento em manter sempre o que foi combinado com a seus parceiros. E até mesmo algumas vezes saindo do que é da alçada de vocês ,pra fazer o possível e o impossível para melhor nos atender.<br/>
+          Somos uma família Grupo Rio, quero agradecer pela parceria de todos esses longos anos e confiança no trabalho dessa empresa que faz crescer cada dia mais.<br/>
+          Agradecer também o carinho e respeito que sempre fui tratada por toda equipe.<br/>
+          Estamos juntos, sempre.
+          </p>
+          <h4>Claudia Moura</h4>
+        </div>
+      </motion.div>
+    )
+  }
+
+  function DepoimentoFernando(){
+    return (
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Fernando"}>
+        <div className="Image">
+          <Image src="/fernando.webp" alt="Fernando e Fernanda Porto" width="86px" height="86px" layout="fixed"/>
+        </div>
+
+        <div>
+          <p>
+          Venho agradecer ao Grupo Rio e toda sua equipe por mais um ano de parceria e desejo a todos um 2022 cheio de conquistas e realizações para todo nós um forte abraço da família Porto.
+          </p>
+          <h4>Fernando e Fernanda Porto</h4>
+        </div>
+      </motion.div>
+    )
+  }
+
+  function DepoimentoGuilherme(){
+    return (
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Guilherme"}>
+        <div className="Image">
+          <Image src="/guilherme.webp" alt="Guilherme Marinho" width="86px" height="86px" layout="fixed"/>
+        </div>
+
+        <div>
+          <p>
+          Grupo Rio é a melhor definição de empresa parceria. Enquanto muitos querem sozinhos chegar ao topo eles trabalham para que possamos chegar ao topo juntos como verdadeiro parceiro.
+          </p>
+          <h4>Guilherme Marinho</h4>
+        </div>
+      </motion.div>
+    )
+  }
+
+  function DepoimentoFelipe(){
+    return (
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Felipe"}>
+        <div className="Image">
+          <Image src="/felipe.webp" alt="Filipe Oliveira" width="86px" height="86px" layout="fixed"/>
+        </div>
+
+        <div>
+          <p>
+          Uma Empresa Sólida que trabalha de forma recíproca com o Parceiro, a qual temos a alegria de fazer parte há 12 Anos compartilhando e acompanhando todo o sucesso em todos os períodos desse desafiador mercado.
+          </p>
+          <h4>Filipe Oliveira</h4>
+        </div>
+      </motion.div>
+    )
   }
 
   return (
@@ -163,38 +261,32 @@ const Home: NextPage = () => {
           </div>
 
           <div>
-              <div>
-                <div className="Image">
-                  <Image src="/Rosangela-Botelho.webp" alt="João Santos" width="86px" height="86px" layout="fixed"/>
-                </div>
-
-                <div>
-                  <p>
-                  Eu quero agradecer ao Grupo Rio e toda  sua maravilhosa equipe de supervisores,atendentes,gerentes todo o carinho e profissionalismo por nos corretores, muito grata a vocês eu sou pela confiança e credibilidade ao meu trabalho...<br/>
-                  Desejo um 2022 recheado de coisas maravilhosas!!!<br/>
-                  Deus os abençoe!!!<br/>
-                  Um beijo no coração de cada um de vocês🌹❤️😘👏🙏🙏🙏
-                  </p>
-                  <h4>Rosangela Botelho Damian</h4>
-                </div>
-              </div>
-
-              <div>
-                <div className="Image">
-                  <Image src="/Claudia-Moura.webp" alt="Silva Santos" width="86px" height="86px" layout="fixed"/>
-                </div>
-
-                <div>
-                  <p>
-                  Venho agradecer pela parceria de vocês, e comprometimento em manter sempre o que foi combinado com a seus parceiros. E até mesmo algumas vezes saindo do que é da alçada de vocês ,pra fazer o possível e o impossível para melhor nos atender.<br/>
-                  Somos uma família Grupo Rio, quero agradecer pela parceria de todos esses longos anos e confiança no trabalho dessa empresa que faz crescer cada dia mais.<br/>
-                  Agradecer também o carinho e respeito que sempre fui tratada por toda equipe.<br/>
-                  Estamos juntos, sempre.
-                  </p>
-                  <h4>Claudia Moura</h4>
-                </div>
-              </div>
-            </div>
+            <AnimatePresence>
+              {
+                positionSlideDepoimentos == 0 && (
+                  <>
+                    {DepoimentoRosangela()}
+                    {DepoimentoClaudia()}
+                  </>
+                )
+              }
+              {
+                positionSlideDepoimentos == 1 && (
+                  <>
+                    {DepoimentoGuilherme()}
+                    {DepoimentoFernando()}
+                  </>
+                )
+              }
+              {
+                positionSlideDepoimentos == 2 && (
+                  <>
+                    {DepoimentoFelipe()}
+                  </>
+                )
+              }
+            </AnimatePresence>
+          </div>
         </section>
         <Footer/>
       </main>

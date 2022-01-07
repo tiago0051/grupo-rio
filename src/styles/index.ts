@@ -311,6 +311,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
 
     main section:nth-child(7){
         width: 100%;
+        height: 819px;
         display: flex;
         align-items: center;
         background-color: #f9fafb;
@@ -332,6 +333,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         > div > div {
+            height: 600px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -370,6 +372,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         @media only screen and (max-width: 600px) {
+            height: 1550px;
 
             h2 {
                 padding: 1rem;
@@ -381,6 +384,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             }
 
             > div > div {
+                height: 600px;
                 flex-direction: column;
             }
 
