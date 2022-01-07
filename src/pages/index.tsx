@@ -259,9 +259,10 @@ const Home: NextPage = () => {
           <div>
             <h2>Depoimentos de nossos parceiros</h2>
           </div>
+          <div>
               {
                 positionSlideDepoimentos == 0 && (
-                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0.8}}} transition={{duration: 1, ease: "backInOut"}} key={"Claudia"}>
+                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0}}} exit={{opacity: 0, x: 200}} transition={{duration: 0.8, ease: "anticipate"}} key={"Claudia"}>
                     {DepoimentoRosangela()}
                     {DepoimentoClaudia()}
                   </motion.div>
@@ -269,7 +270,7 @@ const Home: NextPage = () => {
               }
               {
                 positionSlideDepoimentos == 1 && (
-                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0.8}}} transition={{duration: 0.5, ease: "backInOut"}} key={"Fernando"}>
+                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0}}} exit={{opacity: 0, x: 200}} transition={{duration: 0.8, ease: "anticipate"}} key={"Fernando"}>
                     {DepoimentoGuilherme()}
                     {DepoimentoFernando()}
                   </motion.div>
@@ -277,11 +278,12 @@ const Home: NextPage = () => {
               }
               {
                 positionSlideDepoimentos == 2 && (
-                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0.8}}} transition={{duration: 1, ease: "backInOut"}} key={"Felipe"}>
+                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0}}} exit={{opacity: 0, x: 200}} transition={{duration: 0.8, ease: "anticipate"}} key={"Felipe"}>
                     {DepoimentoFelipe()}
                   </motion.div>
                 )
               }
+          </div>
         </section>
         <Footer/>
       </main>
