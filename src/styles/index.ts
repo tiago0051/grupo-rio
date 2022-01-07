@@ -378,7 +378,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         @media only screen and (max-width: 600px) {
-            height: 1770px;
+            height: 1540px;
 
             h2 {
                 padding: 1rem;
@@ -390,7 +390,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             }
 
             > div > div > div {
-                height: 780px;
+                height: 700px;
                 flex-direction: column;
             }
 

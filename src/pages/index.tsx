@@ -70,9 +70,6 @@ const Home: NextPage = () => {
         <div>
           <p>
           Eu quero agradecer ao Grupo Rio e toda  sua maravilhosa equipe de supervisores,atendentes,gerentes todo o carinho e profissionalismo por nos corretores, muito grata a vocês eu sou pela confiança e credibilidade ao meu trabalho...<br/>
-          Desejo um 2022 recheado de coisas maravilhosas!!!<br/>
-          Deus os abençoe!!!<br/>
-          Um beijo no coração de cada um de vocês🌹❤️😘👏🙏🙏🙏
           </p>
           <h4>Rosangela Botelho Damian</h4>
         </div>
@@ -91,8 +88,6 @@ const Home: NextPage = () => {
           <p>
           Venho agradecer pela parceria de vocês, e comprometimento em manter sempre o que foi combinado com a seus parceiros. E até mesmo algumas vezes saindo do que é da alçada de vocês ,pra fazer o possível e o impossível para melhor nos atender.<br/>
           Somos uma família Grupo Rio, quero agradecer pela parceria de todos esses longos anos e confiança no trabalho dessa empresa que faz crescer cada dia mais.<br/>
-          Agradecer também o carinho e respeito que sempre fui tratada por toda equipe.<br/>
-          Estamos juntos, sempre.
           </p>
           <h4>Claudia Moura</h4>
         </div>
