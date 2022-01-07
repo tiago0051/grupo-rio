@@ -311,7 +311,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
 
     main section:nth-child(7){
         width: 100%;
-        height: 679px;
+        height: 500px;
         display: flex;
         align-items: center;
         background-color: #f9fafb;
@@ -339,7 +339,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         > div > div > div {
-            height: 600px;
+            height: 400px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -366,7 +366,6 @@ export const StyledIndex = styled.div<StyledIndexProps>`
 
 
         p {
-            font-size: 1.1rem;
             line-height: 1.9rem;
             font-weight: 700;
             padding: 0.7rem;
@@ -378,7 +377,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         @media only screen and (max-width: 600px) {
-            height: 1540px;
+            height: 1340px;
 
             h2 {
                 padding: 1rem;
@@ -390,8 +389,9 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             }
 
             > div > div > div {
-                height: 700px;
+                height: 600px;
                 flex-direction: column;
+                justify-content: space-between;
             }
 
             .Image {

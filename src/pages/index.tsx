@@ -85,7 +85,7 @@ const Home: NextPage = () => {
         </div>
 
         <div>
-          <p>
+          <p style={{fontSize: "0.9rem"}}>
           Venho agradecer pela parceria de vocês, e comprometimento em manter sempre o que foi combinado com a seus parceiros. E até mesmo algumas vezes saindo do que é da alçada de vocês ,pra fazer o possível e o impossível para melhor nos atender.<br/>
           Somos uma família Grupo Rio, quero agradecer pela parceria de todos esses longos anos e confiança no trabalho dessa empresa que faz crescer cada dia mais.<br/>
           </p>
