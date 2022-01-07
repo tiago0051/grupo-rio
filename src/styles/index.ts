@@ -372,7 +372,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         @media only screen and (max-width: 600px) {
-            height: 1760px;
+            height: 1770px;
 
             h2 {
                 padding: 1rem;

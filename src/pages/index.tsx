@@ -62,7 +62,7 @@ const Home: NextPage = () => {
 
   function DepoimentoRosangela(){
     return (
-      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Claudia"}>
+      <div>
         <div className="Image">
           <Image src="/Rosangela-Botelho.webp" alt="Rosangela Botelho" width="86px" height="86px" layout="fixed"/>
         </div>
@@ -76,13 +76,13 @@ const Home: NextPage = () => {
           </p>
           <h4>Rosangela Botelho Damian</h4>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
   function DepoimentoClaudia() {
     return(
-      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Rosangela"}>
+      <div>
         <div className="Image">
           <Image src="/Claudia-Moura.webp" alt="Claudia Moura" width="86px" height="86px" layout="fixed"/>
         </div>
@@ -96,13 +96,13 @@ const Home: NextPage = () => {
           </p>
           <h4>Claudia Moura</h4>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
   function DepoimentoFernando(){
     return (
-      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Fernando"}>
+      <div>
         <div className="Image">
           <Image src="/fernando.webp" alt="Fernando e Fernanda Porto" width="86px" height="86px" layout="fixed"/>
         </div>
@@ -113,13 +113,13 @@ const Home: NextPage = () => {
           </p>
           <h4>Fernando e Fernanda Porto</h4>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
   function DepoimentoGuilherme(){
     return (
-      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Guilherme"}>
+      <div>
         <div className="Image">
           <Image src="/guilherme.webp" alt="Guilherme Marinho" width="86px" height="86px" layout="fixed"/>
         </div>
@@ -130,13 +130,13 @@ const Home: NextPage = () => {
           </p>
           <h4>Guilherme Marinho</h4>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
   function DepoimentoFelipe(){
     return (
-      <motion.div initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 0.8}}} exit={{opacity: 0}} transition={{duration: 1, ease: "backInOut"}} key={"Felipe"}>
+      <div>
         <div className="Image">
           <Image src="/felipe.webp" alt="Filipe Oliveira" width="86px" height="86px" layout="fixed"/>
         </div>
@@ -147,7 +147,7 @@ const Home: NextPage = () => {
           </p>
           <h4>Filipe Oliveira</h4>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
@@ -259,34 +259,29 @@ const Home: NextPage = () => {
           <div>
             <h2>Depoimentos de nossos parceiros</h2>
           </div>
-
-          <div>
-            <AnimatePresence>
               {
                 positionSlideDepoimentos == 0 && (
-                  <>
+                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0.8}}} transition={{duration: 1, ease: "backInOut"}} key={"Claudia"}>
                     {DepoimentoRosangela()}
                     {DepoimentoClaudia()}
-                  </>
+                  </motion.div>
                 )
               }
               {
                 positionSlideDepoimentos == 1 && (
-                  <>
+                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0.8}}} transition={{duration: 0.5, ease: "backInOut"}} key={"Fernando"}>
                     {DepoimentoGuilherme()}
                     {DepoimentoFernando()}
-                  </>
+                  </motion.div>
                 )
               }
               {
                 positionSlideDepoimentos == 2 && (
-                  <>
+                  <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0.8}}} transition={{duration: 1, ease: "backInOut"}} key={"Felipe"}>
                     {DepoimentoFelipe()}
-                  </>
+                  </motion.div>
                 )
               }
-            </AnimatePresence>
-          </div>
         </section>
         <Footer/>
       </main>
