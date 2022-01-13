@@ -32,13 +32,13 @@ export default function Footer(){
 
                 <div className="coluna">
                     <h3>Localização</h3>
-                    <p>Largo São Francisco de Paula, 42 – 4º andar – Centro<br/>Rio de Janeiro – RJ</p>
+                    <p>Largo São Francisco de Paula, 42 – 4º andar – Centro<br/>Rio de Janeiro – RJ / 20051-070</p>
                 </div>
             </div>
 
             <div className="linha">
                 <div className="coluna">© 2021 Grupo Rio</div>
-                <div className="coluna">Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5555219706468&text&app_absent=0">Conect-se</a></div>
+                <div className="coluna">Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5521982436773&text&app_absent=0">Conect-se</a></div>
             </div>
         </FooterStyle>
     )

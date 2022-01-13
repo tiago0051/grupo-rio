@@ -91,7 +91,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
         case "quitandinha-petropolis-rj":
             filial = {
                 nome: "PETRÓPOLIS",
-                endereço: "R. Mal. Deodoro, 46 - SL 604- Centro \nPetrópolis - RJ",
+                endereço: "R. Mal. Deodoro, 46 - SL 702- Centro \nPetrópolis - RJ",
                 telefone: "(24) 2231-7634 / 2231-0594 / 2242-2053",
                 email: "filialpetropolis@rjgrupo.com.br",
                 imagem: "/filiais/quitandinha-petropolis-r.webp"

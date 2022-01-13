@@ -311,27 +311,35 @@ export const StyledIndex = styled.div<StyledIndexProps>`
 
     main section:nth-child(7){
         width: 100%;
+        height: 500px;
         display: flex;
         align-items: center;
         background-color: #f9fafb;
+        overflow: hidden;
 
         h2 {
             text-align: center;
         }
 
         > div {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            max-width: 1080px;
-            margin-bottom: 4rem;
-        }
-
-        > div > div:hover {
-            box-shadow: 0 3px 10px 2px rgb(0, 0, 0, 0.3);
+            overflow: hidden;
         }
 
         > div > div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: initial;
+            width: 100%;
+            max-width: 1080px;
+            overflow: hidden;
+        }
+
+        > div > div > div:hover {
+            box-shadow: 0 3px 10px 2px rgb(0, 0, 0, 0.3);
+        }
+
+        > div > div > div {
+            height: 400px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -352,13 +360,12 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             border-radius: 50%;
         }
 
-        > div > div > div:last-child {
+        > div > div > div > div:last-child {
             width: 80%;
         }
 
 
         p {
-            font-size: 1.1rem;
             line-height: 1.9rem;
             font-weight: 700;
             padding: 0.7rem;
@@ -370,18 +377,21 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         @media only screen and (max-width: 600px) {
+            height: 1340px;
 
             h2 {
                 padding: 1rem;
                 font-size: 2.7rem;
             }
 
-            > div {
+            > div > div {
                 flex-direction: column;
             }
 
-            > div > div {
+            > div > div > div {
+                height: 600px;
                 flex-direction: column;
+                justify-content: space-between;
             }
 
             .Image {
@@ -389,7 +399,7 @@ export const StyledIndex = styled.div<StyledIndexProps>`
                 margin-bottom: 2rem;
             }
 
-            > div > div > div:last-child {
+            > div > div > div > div:last-child {
                 width: 100%;
             }
         }
