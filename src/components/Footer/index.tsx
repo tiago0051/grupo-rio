@@ -32,7 +32,7 @@ export default function Footer(){
 
                 <div className="coluna">
                     <h3>Localização</h3>
-                    <p>Largo São Francisco de Paula, 42 – 4º andar – Centro<br/>Rio de Janeiro – RJ</p>
+                    <p>Largo São Francisco de Paula, 42 – 4º andar – Centro<br/>Rio de Janeiro – RJ / 20051-070</p>
                 </div>
             </div>
 

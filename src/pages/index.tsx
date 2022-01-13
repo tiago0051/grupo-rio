@@ -112,6 +112,23 @@ const Home: NextPage = () => {
     )
   }
 
+  function PauloPaiva(){
+    return (
+      <div>
+        <div className="Image">
+          <Image src="/paulo.webp" alt="Paulo Paiva" width="86px" height="86px" layout="fixed"/>
+        </div>
+
+        <div>
+          <p>
+          Para mim, as principais características do Grupo são: honestidade, retaguarda de altíssima qualidade e presteza, presença física (fundamental), portas sempre abertas e, a que mais me impressiona, trata e chama cada parceiro pelo nome (essa é imbatível).
+          </p>
+          <h4>Paulo Paiva</h4>
+        </div>
+      </div>
+    )
+  }
+
   function DepoimentoGuilherme(){
     return (
       <div>
@@ -275,6 +292,7 @@ const Home: NextPage = () => {
                 positionSlideDepoimentos == 2 && (
                   <motion.div initial={{opacity: 0, x: -200}} animate={{opacity: 1, x: 0, transition: {delay: 0}}} exit={{opacity: 0, x: 200}} transition={{duration: 0.8, ease: "anticipate"}} key={"Felipe"}>
                     {DepoimentoFelipe()}
+                    {PauloPaiva()}
                   </motion.div>
                 )
               }
