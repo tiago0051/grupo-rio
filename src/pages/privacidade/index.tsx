@@ -14,7 +14,8 @@ export default function Privacidade(){
     return(
         <PrivacidadeStyled>
             <Head>
-                <title>Grupo Rio - Filiais</title>
+                <title>Grupo Rio - Termo de Privacidade</title>
+                <meta name="description" content="O GRUPO RIO, reconhece a importância de proteger a privacidade de todos os usuários de seu website." />
             </Head>
 
             <NavBar/>

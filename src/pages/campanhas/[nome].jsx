@@ -10,7 +10,7 @@ export default function Campanha(props){
     return (
         <CampanhaStyled nome={props.nome}>
             <Head>
-                <title>Grupo Rio   {props.nome}</title>
+                <title>Grupo Rio - {props.nome}</title>
             </Head>
 
             <NavBar/>
