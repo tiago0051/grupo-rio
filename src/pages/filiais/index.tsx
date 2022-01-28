@@ -13,6 +13,7 @@ export default function Filiais(){
         <FiliaisStyled>
             <Head>
                 <title>Grupo Rio - Filiais</title>
+                <meta name="description" content="Aqui você encontra todas as nossas filiais, como a Filial Rio de Janeiro, a Filial São Paulo, a Filial Curitiba e muito mais." />
             </Head>
             <Navbar/>
 

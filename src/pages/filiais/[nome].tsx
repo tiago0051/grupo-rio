@@ -15,6 +15,7 @@ export default function Filial(props : FilialProps) {
         <StyledFilial img={props.filial.imagem}>
             <Head>
                 <title>Grupo Rio - {props.filial.nome}</title>
+                <meta name="description" content={props.filial.endereço} />
             </Head>
             <NavBar/>
 

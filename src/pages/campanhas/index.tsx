@@ -12,6 +12,7 @@ export default function Index(){
         <StyledCampanhas>
             <Head>
                 <title>Grupo Rio - Campanhas</title>
+                <meta name="description" content="Aqui você encontra todas as nossas campanhas, como a Campanha de Volta Redonda, a Campanha de Campo dos Goytacazes, a Campanha de Petropolis e muito mais." />
             </Head>
 
             <section>
