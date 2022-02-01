@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
     setInterval(() => {
       setPositionSlideDepoimentos(posição => posição < 2 ? posição + 1 : 0)
-  }, 10000)
+  }, 5000)
   }, [])
 
   const [formNome, setFormNome] = useState('')
