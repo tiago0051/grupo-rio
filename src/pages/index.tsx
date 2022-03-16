@@ -6,12 +6,12 @@ import {FaSmile, FaEye, FaLightbulb, FaRocket, FaCopyright, FaUsers, FaArrowUp} 
 
 import NavBar from '../components/NavBar'
 import ApoiadoresSlider from '../components/ApoiadoresSlider'
+import Footer from '../components/Footer'
 
 import { StyledIndex, ButtonAreaDoCliente, ButtonVoltarInicio } from '../styles'
 import React, { useEffect, useState } from 'react'
-import Footer from '../components/Footer'
 import axios from 'axios'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Home: NextPage = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -182,45 +182,45 @@ const Home: NextPage = () => {
         <ButtonVoltarInicio><Link passHref href="/#inicio"><FaArrowUp/></Link></ButtonVoltarInicio>
 
         <section>
-        <h2>Nossos Diferenciais</h2>
+          <h2>Nossos Diferenciais</h2>
 
-        <ul>
-          <li>
-            <FaSmile/>
-            <h3>Motivação</h3>
-            <p>Somos impulsionados a realizar um trabalho eficiente e de resultados!</p>
-          </li>
+          <ul>
+            <li>
+              <FaSmile/>
+              <h3>Motivação</h3>
+              <p>Somos impulsionados a realizar um trabalho eficiente e de resultados!</p>
+            </li>
 
-          <li>
-            <FaEye/>
-            <h3>Visão</h3>
-            <p>Acreditamos em investimentos de futuro, trabalhamos para abrir mentes!</p>
-          </li>
+            <li>
+              <FaEye/>
+              <h3>Visão</h3>
+              <p>Acreditamos em investimentos de futuro, trabalhamos para abrir mentes!</p>
+            </li>
 
-          <li>
-            <FaLightbulb/>
-            <h3>Estratégia</h3>
-            <p>Nossa maneira de fazer é atrativa e diferenciada, idealizamos o nosso próprio caminho de forma única!</p>
-          </li>
+            <li>
+              <FaLightbulb/>
+              <h3>Estratégia</h3>
+              <p>Nossa maneira de fazer é atrativa e diferenciada, idealizamos o nosso próprio caminho de forma única!</p>
+            </li>
 
-          <li>
-            <FaRocket/>
-            <h3>Reconhecimento</h3>
-            <p>Detentores de inúmeros prêmios de qualidade e produção, conquistamos inequívoco destaque a nível nacional no segmento.</p>
-          </li>
+            <li>
+              <FaRocket/>
+              <h3>Reconhecimento</h3>
+              <p>Detentores de inúmeros prêmios de qualidade e produção, conquistamos inequívoco destaque a nível nacional no segmento.</p>
+            </li>
 
-          <li>
-            <FaCopyright/>
-            <h3>Sensatez e Marca</h3>
-            <p>Nossa história de sucesso é fundamentada nos princípios da idoneidade e valorização de nossos parceiros.</p>
-          </li>
+            <li>
+              <FaCopyright/>
+              <h3>Sensatez e Marca</h3>
+              <p>Nossa história de sucesso é fundamentada nos princípios da idoneidade e valorização de nossos parceiros.</p>
+            </li>
 
-          <li>
-            <FaUsers/>
-            <h3>Liderança e Time</h3>
-            <p>Investimos na informação de um time competente e orgulhoso em pertencer a essa organização!</p>
-          </li>
-        </ul>
+            <li>
+              <FaUsers/>
+              <h3>Liderança e Time</h3>
+              <p>Investimos na informação de um time competente e orgulhoso em pertencer a essa organização!</p>
+            </li>
+          </ul>
         </section>
       
         <section id="quem-somos">

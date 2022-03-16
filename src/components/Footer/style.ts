@@ -38,7 +38,7 @@ export const FooterStyle = styled.footer`
         text-align: left;
     }
 
-    a {
+    #copy a {
         border-bottom: 1px solid rgb(200, 200, 200);
         font-style: italic;
         transition: border 0.1s linear;
@@ -87,9 +87,17 @@ export const FooterStyle = styled.footer`
         a{
             align-self: flex-start;
         }
+
+        #endereco {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
         .linha {
             flex-direction: column;
-            align-self: flex-start;
+            align-self: center;
         }
 
         #redes-sociais {
@@ -97,7 +105,6 @@ export const FooterStyle = styled.footer`
         }
 
         #links {
-            align-self: flex-start;
             margin-bottom: 3rem;
         }
     }

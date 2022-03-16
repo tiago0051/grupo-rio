@@ -29,6 +29,7 @@ export const StyledSlider = styled.div`
         flex-wrap: nowrap;
         overflow-x: hidden;
         scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
     }
 
     div > div > span {
@@ -48,10 +49,15 @@ export const StyledSlider = styled.div`
 
     #items > span {
         margin: 0 30px !important;
+        scroll-snap-align: center;
     }
 
     @media only screen and (max-width: 600px) {
         width: 300px;
+
+        #items > span {
+            margin: 0 calc(50% - 75px) !important;
+        }
 
         #contador svg {
             display: none;

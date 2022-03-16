@@ -31,12 +31,14 @@ export default function Footer(){
                 </div>
 
                 <div className="coluna">
-                    <h3>Localização</h3>
-                    <p>Largo São Francisco de Paula, 42 – 4º andar – Centro<br/>Rio de Janeiro – RJ / 20051-070</p>
+                    <div id='endereco'>
+                        <h3>Localização</h3>
+                        <p>Largo São Francisco de Paula, 42 – 4º andar – Centro<br/>Rio de Janeiro – RJ / 20051-070</p>
+                    </div>
                 </div>
             </div>
 
-            <div className="linha">
+            <div className="linha" id='copy'>
                 <div className="coluna">© 2021 Grupo Rio</div>
                 <div className="coluna">Desenvolvido por <a href="https://api.whatsapp.com/send/?phone=5521982436773&text&app_absent=0">Conect-se</a></div>
             </div>

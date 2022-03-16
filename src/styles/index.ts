@@ -172,6 +172,11 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         @media only screen and (max-width: 600px) {
+            article {
+                margin-bottom: 0;
+            }
+
+
             > div {
                 flex-direction: column;
                 justify-content: center;
@@ -377,11 +382,11 @@ export const StyledIndex = styled.div<StyledIndexProps>`
         }
 
         @media only screen and (max-width: 600px) {
-            height: 1340px;
+            height: initial;
 
             h2 {
                 padding: 1rem;
-                font-size: 2.7rem;
+                font-size: 2.5rem;
             }
 
             > div > div {
@@ -391,7 +396,13 @@ export const StyledIndex = styled.div<StyledIndexProps>`
             > div > div > div {
                 height: 600px;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: center;
+                text-align: justify;
+
+                p {
+                    padding: 0;
+                    font-weight: 300;
+                }
             }
 
             .Image {
