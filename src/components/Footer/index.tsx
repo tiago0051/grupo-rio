@@ -33,7 +33,7 @@ export default function Footer(){
                 <div className="coluna">
                     <div id='endereco'>
                         <h3>Localização</h3>
-                        <p>Largo São Francisco de Paula, 42 – 4º andar – Centro<br/>Rio de Janeiro – RJ / 20051-070</p>
+                        <p>Avenida Rio Branco, 80 - 13º andar - Centro<br/>Rio de Janeiro – RJ / 20040-070</p>
                     </div>
                 </div>
             </div>
