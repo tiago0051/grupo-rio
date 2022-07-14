@@ -117,11 +117,11 @@ export default function Privacidade(){
                 </p>
 
                 <article>
-                    CRISTIANO DE ARAUJO SOUZA
-                    CPF: 11523133716
-                    Endereço: Av. Rio Branco, 80 - 13° andar, Centro, Rio de Janeiro - RJ
-                    CEP: 20040-070
-                    Email: cristiano.araujo@rjgrupo.com.br
+                    CRISTIANO DE ARAUJO SOUZA<br/>
+                    CPF: 11523133716<br/>
+                    Endereço: Av. Rio Branco, 80 - 13° andar, Centro, Rio de Janeiro - RJ<br/>
+                    CEP: 20040-070<br/>
+                    Email: cristiano.araujo@rjgrupo.com.br<br/>
                 </article>
 
                 <h2>ANEXOS</h2>
