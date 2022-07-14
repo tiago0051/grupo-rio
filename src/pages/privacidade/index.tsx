@@ -117,12 +117,11 @@ export default function Privacidade(){
                 </p>
 
                 <article>
-                Serviços de Pesquisas Cadastrais Júpiter Ltda – CNPJ: 33.879.200/0001-15<br/>
-                Endereço: Largo São Francisco de Paula, 42, 4 andar, Centro, Rio de Janeiro/RJ<br/>
-                CEP: 20051-070<br/>
-                A/C ENCARREGADO PELO TRATAMENTO DE DADOS PESSOAIS<br/>
-                E-mail: gruporio.dpo@rjgrupo.com.br<br/>
-                Telefone: (21)3505-7560
+                    CRISTIANO DE ARAUJO SOUZA
+                    CPF: 11523133716
+                    Endereço: Av. Rio Branco, 80 - 13° andar, Centro, Rio de Janeiro - RJ
+                    CEP: 20040-070
+                    Email: cristiano.araujo@rjgrupo.com.br
                 </article>
 
                 <h2>ANEXOS</h2>
